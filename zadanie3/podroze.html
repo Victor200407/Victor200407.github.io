@@ -1,40 +1,344 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Challenge: Colorful creature</title>
-        
-        <style>
-        
-        body {
-            background-color:tomato; 
+<!DOCTYPE html>
+<html lang="pl-PL">
+	<head>
+		<link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+			<meta charset="UTF-10">
+			<base href=".">
+			<title>Podroze</title>
+
+		<style>
+
+		body {
+            background-color:rgb(10, 10, 10);
             text-align:center;
-        }
-        
-        p {
-            color:rgb(0, 51, 53);
-            font-family:'Lucida Console';
-            font-size: 15px;
-            
-        }
-         h1 {
-            color:rgb(0, 51, 153);
-            font-family:'Lucida Console';
-            font-size: 40px;
-            
-        }
-        
-        
-        </style>
-        
-    </head>
-    <body>
-        
-        <h1>The coolest creature</h1>
-        
-        <img src="https://www.kasandbox.org/programming-images/avatars/aqualine-seed.png">
-        
-        <p>The <em>coolest creature</em> is awesome because <strong>it is Onion</strong>.</p>
-       
-    </body>
+			font-family: 'Bebas Neue';
+			}
+
+		h1 {
+			color:rgb(200, 200, 60);
+			font-size: 300px;	
+			}
+			
+		h2 {
+			color:rgb(200, 200, 60);
+			font-size: 50px;	
+			}
+			
+		p {
+			color:rgb(170, 170, 170);
+				
+			}	
+			
+		li {
+		text-align: left;
+		color: rgb(200, 200, 60);
+		}	
+		
+		a {
+			color:rgb(100, 100, 60);
+				
+			}
+
+		summary {
+			color:rgb(200, 200, 60);
+				
+			}	
+
+
+		.description {
+			font-size: 60px;
+			font-style: sup;
+			font-style: site;
+			color: rgb(256, 256, 256, 0.2);
+			}
+
+		.text {
+			font-size: 40px;	
+			}
+			
+		.line {
+			line-height: 100%;
+			}
+			
+		.footer {
+			color:rgb(150, 150, 150);
+			font-size: 40px;
+			}
+			
+		.subfooter {
+			color:rgb(150, 150, 150);
+			font-size: 40px;
+			}
+		
+			
+		.smalltitle {
+			font-size: 120px;
+		
+			}	
+
+		#subtitle {
+			font-size: 130px;
+			}
+
+		#container {
+		background-color:rgb(10, 10, 10);
+		min-height : 420px;
+		width: 100%;
+		text-align:center;
+		}
+		
+		#title {
+		height : 1080px;
+		width: 100%;
+		text-align:center;
+		line-height: 50%;
+		}
+		
+		#picture {
+		height : 100%;
+		width: 100%;
+		background-image: url('img/1.jpg');
+		background-repeat: no-repeat;
+		background-size: 101% 105%;
+		text-align:left;
+		}
+		
+		#content {
+		
+		margin-left: auto;
+		margin-right: auto;
+		background-color:rgb(10, 10, 10);
+		min-height : 800px;
+		width: 100%;
+		text-align:center;
+		}
+		
+		#text {
+		min-height : 800px;
+		width: 80%;
+		display: inline-block; 
+		}
+
+		#text2 {
+		float: left;
+		min-height : 800px;
+		width: 40%; 
+		margin-left: 200px;
+		margin-top: -200px;
+		}
+		
+		#text3 {
+		background-image: url('img/5.jpg');
+		background-repeat: no-repeat;
+		background-size: 110% 1490px;
+		float: left;
+		height : 1600px;
+		width: 100%; 
+		margin-top: -200px;
+		}
+		
+		#text4 {
+		min-height : 100px;
+		width: 80%;
+		display: inline-block; 
+		}
+		
+		#table {
+		background-color:rgb(10, 10, 10);
+		min-height: 500px;
+		width: 100%;
+		margin-top: 1600px;
+		}
+		
+		#footer {
+		margin-top: 300px;
+		height: 140px;
+		width: 100%;
+		background-color: rgb(13, 15, 15);
+		}
+		
+		#bangkoknoca {
+		background-color:rgb(10, 10, 10);
+		}
+	
+		#lista {
+		background-color:rgb(10, 10, 10);
+		}
+		
+		#tabelka {
+		background-color:rgb(10, 10, 10);
+		}
+		
+
+		</style>
+
+	<head>
+
+	<body>
+
+		<div id = "container">
+		  <div id = "title">
+			
+		    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<h1><header>PODRÓŻE</header></h1>
+			<h2><i>Important italic text</i></h2>
+		  </div>
+		  
+		  <div id = "content">
+				
+			  <div id = "picture">
+			  
+			  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			  <p class = "description">nocne ulice Bangkoku</p>
+			  </div>
+		  
+		  <section id="bangkoknoca">
+			<h1 id="subtitle">BANGKOK NOCĄ</h1>
+		  
+			  <div id = "text">	
+				<p class="text">
+				Bangkok często określany jest jako miasto chaosu i licznych sprzeczności, które jednak tworzą niepowtarzalną atmosferę tego miasta. Drapacze chmur wyrastają tu ponad złoto-czerwonymi dachami świątyń, maleńkie domki dla duchów strzegą wejść do nowoczesnych hoteli, zaś wprost z wrzecionowatych łodzi przemierzających tutejsze kanały, przesiąść się możemy do  superszybkiej nadziemnej kolei 
+				</p>
+			  </div>
+		  </section>	  
+			  
+		  <section id="lista">		
+		<div id = "text3">		  
+			  <div id = "text2">	
+			
+				<ul class="text">
+					<br><br>
+					
+					<h1 class="smalltitle">Bangkok</h1>
+				
+					<li><p>Bangkok jest najgorętszym miastem świata. Średnia temperatura powietrza w ciągu roku wynosi 28 stopni Celcjusza</p></li>
+					<li><p>Jest stolicą Tajlandi</p></li>
+					<li><p>Bangkok ma najdłuższą nazwę spośród wszystkich miast na świecie  ( Krung Thep Mahanakhon Amon Rattanakosin Mahinthara Ayuthaya Mahadilok Phop Noppharat Ratchathani Burirom Udomratchaniwet Mahasathan Amon Piman Awatan Sathit Sakkathattiya Witsanukam Prasit)</p></li>
+					<li><p>Bangkok jest najczęściej odwiedzanym miastem na świecie</p></li>
+					<li><p>Tajlandia jest domem dla około 200 tysięcy milionerów, a około 95% z nich mieszka w Bangkoku</p></li>
+					<li><p>Bangkok posiada największe Chinatown na świecie</p></li>
+					<li><p>Bangkok ma ogromną japońską populację, co oznacza wiele restauracji sushi, urokliwe kawiarnie, sklepy z ramenem</p></li>
+				</ul>
+			  </div>
+		</div>
+		</section>  
+		  
+		<section id="tabelka">  
+			<div id="table">
+				 
+			        <h1 class="smalltitle">Co warto zobaczyć</h1>
+					<div id="text4">
+						
+						
+						<details>
+							<summary>
+						<p class="text">Wat Pho i Leżący Budda</p>
+							</summary>
+						<p class="footer">Teoretycznie nie jest to najsłynniejsza świątynia miasta, ale zrobiła na nas największe wrażenie. Oczywiście za sprawą pierwszego w życiu posągu leżącego Buddy, który widzieliśmy w tych rozmiarach oraz dość kompaktowego zagęszczenia najpiękniejszych prangów w Bangkoku. Smukłych, bogato zdobionych, ujmujących oko i zadzierających głowę.</p>
+						</details>
+						
+						<details>
+							<summary>
+						<p class="text">Dom Jima Thomsona</p>
+							</summary>
+						<p class="footer">Niby „jak pięść do oka”, ale tak powie ignorant, który nie zdąży się dowiedzieć, że ten kompleks, stworzony przez amerykańskiego oficera i handlarza jedwabiem, jednego z najbogatszych mieszkańców powojennego Bangkoku, został stworzony z myślą o ocaleniu autentycznej, tajskiej drewnianej architektury. Miejskiej i prowincjonalnej.</p>
+						</details>
+						
+						<details>
+							<summary>
+						<p class="text">Pałac Królewski i Wat Phra Kaew</p>
+							</summary>
+						<p class="footer">Zaplanujcie to miejsce na poranek. Albo drugiego albo trzeciego dnia. Pojawcie się tu przed otwarciem a wcześniej poświęćcie 2 godziny na spacer po okolicy. Albo rejs promem po rzece. Nie przestraszcie się kolejek i zaopatrzcie w spodnie z długimi nogawkami. Jak nie macie – naprzeciwko w sklepie sprzedadzą Wam chętnie. Cała rodzina pewnie utrzymuje się z zapominalskich turystów.</p>
+						</details>
+						
+						<details>
+							<summary>
+						<p class="text">„Nowa” Dzielnica Królewska Dusit</p>
+							</summary>
+						<p class="footer">Gdy tajskim królom zaczynało być ciasno w obrębie centralnej wyspy Rattanakosin (choć wyspa to przesadne określenie) i gdy miasto pęczniało wokół a władcom zaczynała imponować zachodnia architektura – narodziła się idea „drugiego płuca królewskiego”, które wyrosło na północ od kanału Khlong Padung na początku XX wieku a pierwszym królem, który tu uciekł był Rama V.</p>
+						</details>
+						
+						<details>
+							<summary>
+						<p class="text">Złota Góra, Wat Saket i okolice Bandung</p>
+							</summary>
+						<p class="footer">Praktycznie serce miasta, sam środek wielkiego pierścienia, który ograniczają rzeka oraz linia jasnozielona naziemnego metra. Gdyby symbole miasta wybierać po widokach, jakie z nich się rozciągają – ten obiekty wygrywa. Tutaj porada jest prosta: pojawcie się tutaj o świcie. Wczesne słońce będzie wylewać się zza sylwetek wysokościowców i drapaczy chmur na Silomie, usłyszycie miasto z góry, zobaczycie jak bardzo się różni, przy łopoczących na wietrze flagach kraju. To miejsce, otoczone małym ogrodem wymaga małego wysiłku, gdyż unosi się kilkadziesiąt metrów w górę.</p>
+						</details>
+						
+						<details>
+							<summary>
+						<p class="text">Dzielnica Silom i Lumpini Park</p>
+							</summary>
+						<p class="footer">To trójkąt rozciągnięty pomiędzy nabrzeżem, najstarszą jego częścią, pełną starych magazynów, kościołów i ambasad w jednym roku, kwartałem Si Phraya, który płynnie przechodzi w Chinatown oraz Parkiem Lumpini, jedynym pełnoprawnym dużym parkiem miejskim Bangkoku, miejscem wytchnienia, ale też aktywnego wypoczynku i rozrywki. Skoro tutaj rano udają się Chińczycy ćwiczyć Tai Chi – to coś znaczy. Przed głównym wejście do parku znajduje się duży pomnik Króla Ramy VI. Ciuteńkę na zachód od parku znajduje się stadion bokserski, miejsce odwiedzin zainteresowanych tajskim boksem.</p>
+						</details>
+						
+						<details>
+							<summary>
+						<p class="text">Chinatown i Little India</p>
+							</summary>
+						<p class="footer">Chińczycy są wszędzie. Diaspora chińska tworzy ogromne dzielnice w większości miast Azji Pd-Wsch, ale ta w Bangkoku jest największa, zajmuje kilkanaście km2 na południe od Dzielnicy Królewskiej i na północ od Silomu. Wygląda bardzo fajnie, ponieważ stanowi najstarszą tkankę architektoniczną miasta. Zwłaszcza urokliwie prezentują się skrzyżowania ulic z narożnymi, często ponad 100-letnimi fasadami. Jednym z takich skrzyżowań jest SAB junction w północno-zachodnim roku dzielnicy, łączący style secesyjny i art deco. Dzielnica posiada trzy przystanie rzeczne i warto rozpocząć jej zwiedzanie od wizyty w Wat Traimit blisko dworca kolejowego (który sam w sobie też jest ciekawy, to art deco, zaprojektowane przez Holendrów). Świątynia nie jest wybitnie wyróżniającą się, ale stanowi niezły punkt widokowy na okolicę. W sercu dzielnicy warto odwiedzić dom towarowy Tang To Kang oraz bazar Talaad Kao – koniecznie rano. Bliżej rzeki schował się meczet Luang Koch z mikroskopijnym cmentarzykiem, schowanym za budynkiem. Główną ulicą, Sampeng Lane, ozdobioną lampionami i charakterystycznymi dwujęzycznymi neonami warto przejść na zachód w okolice Wat Chakkrawat.</p>
+						</details>
+						
+						<details>
+							<summary>
+						<p class="text">Muzeum Narodowe i Sanam Luang</p>
+							</summary>
+						<p class="footer"><p class="footer">To trójkąt rozciągnięty pomiędzy nabrzeżem, najstarszą jego częścią, pełną starych magazynów, kościołów i ambasad w jednym roku, kwartałem Si Phraya, który płynnie przechodzi w Chinatown oraz Parkiem Lumpini, jedynym pełnoprawnym dużym parkiem miejskim Bangkoku, miejscem wytchnienia, ale też aktywnego wypoczynku i rozrywki. Skoro tutaj rano udają się Chińczycy ćwiczyć Tai Chi – to coś znaczy. Przed głównym wejście do parku znajduje się duży pomnik Króla Ramy VI. Ciuteńkę na zachód od parku znajduje się stadion bokserski, miejsce odwiedzin zainteresowanych tajskim boksem.</p></p>
+						</details>
+						
+						
+					</div>
+		
+			</div>
+		  </div>
+		
+				<br><br>
+				<div id="footer">
+				  <footer>
+				
+					<table style="width:100%" class="footer">
+  <tr>
+    <th colspan="2">
+		Źródła
+	</th>
+    
+	
+	<th colspan="2">
+		KONTAKT
+	</th>
+  </tr>					
+					
+					
+  <tr>
+    <th>
+		<nav>
+		<a href="http://www.fubiz.net/en/2017/07/21/enchanting-photographs-of-bangkok-at-night-2/">Fotografie</a>
+		</nav>
+	</th>
+    <th>
+		<nav>
+		<a href="http://www.fubiz.net/en/2017/07/21/enchanting-photographs-of-bangkok-at-night-2/">Informacje</a>
+		</nav></th>
+	</th> 
+	
+	<th>
+		<a href="mailto:mail@poczta.pl">
+					mail@poczta.pl</a>
+	</th>
+	
+	<th>
+		+48 123 456 789
+	</th>
+  </tr>
+
+</table>
+			<p class="subfooter">Supported by
+
+			<a href="https://github.com/griddb/griddb_nosql?gclid=EAIaIQobChMIvJeKotXH5wIVD5SyCh30VQxgEAAYAiAAEgIENvD_BwE">GitHub</a></p>
+				  </footer>
+				</div>
+			</div>	
+
+	</body>
 </html>
