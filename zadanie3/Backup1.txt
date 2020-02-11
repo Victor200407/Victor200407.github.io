@@ -67,13 +67,8 @@
 			font-size: 40px;
 			}
 			
-		.footer2 {
-			color:rgb(150, 150, 150);
-			font-size: 30px;
-			}
-			
 		.subfooter {
-			color:rgb(30, 30, 30);
+			color:rgb(150, 150, 150);
 			font-size: 40px;
 			}
 		
@@ -168,10 +163,8 @@
 		}
 		
 		#footer {
-		line-height: 160%;
-		margin-top: 240px;
-		padding: 10px;
-		height: 60px;
+		margin-top: 300px;
+		height: 140px;
 		width: 100%;
 		background-color: rgb(13, 15, 15);
 		}
@@ -250,10 +243,6 @@
 		width: 100%;
 		height: 1100px;
 		background-color: rgb(13, 15, 15);
-		}
-		
-		#supported {
-		color:rgb(40, 40, 30);
 		}
 		
 		.OpisL {
@@ -458,7 +447,7 @@
 				<div id="footer">
 				  <footer>
 				
-					<table style="width:100%" class="footer2">
+					<table style="width:100%" class="footer">
   <tr>
     <th colspan="2">
 		Źródła
@@ -494,9 +483,9 @@
   </tr>
 
 </table>
-			<p class="subfooter" style="font-size:30px"">Supported by
+			<p class="subfooter">Supported by
 
-			<a href="https://github.com/griddb/griddb_nosql?gclid=EAIaIQobChMIvJeKotXH5wIVD5SyCh30VQxgEAAYAiAAEgIENvD_BwE" id="supported">GitHub</a></p>
+			<a href="https://github.com/griddb/griddb_nosql?gclid=EAIaIQobChMIvJeKotXH5wIVD5SyCh30VQxgEAAYAiAAEgIENvD_BwE">GitHub</a></p>
 				  </footer>
 				</div>
 			</div>	
