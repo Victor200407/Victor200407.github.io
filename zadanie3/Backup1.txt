@@ -14,6 +14,7 @@
             text-align:center;
 			font-family: 'Bebas Neue';
 			margin: 0px;
+			min-height: 10000px;
 			}
 
 		h1 {
@@ -67,8 +68,13 @@
 			font-size: 40px;
 			}
 			
-		.subfooter {
+		.footer2 {
 			color:rgb(150, 150, 150);
+			font-size: 30px;
+			}
+			
+		.subfooter {
+			color:rgb(30, 30, 30);
 			font-size: 40px;
 			}
 		
@@ -163,10 +169,18 @@
 		}
 		
 		#footer {
-		margin-top: 300px;
-		height: 140px;
+		margin-top: 240px;
+		height: 200px;
 		width: 100%;
 		background-color: rgb(13, 15, 15);
+		}
+		
+		#footer_tresc {
+		line-height: 160%;
+		padding: 10px;
+		height: 60px;
+		width: 90%;
+		display: inline-block; 
 		}
 		
 		#bangkoknoca {
@@ -245,6 +259,17 @@
 		background-color: rgb(13, 15, 15);
 		}
 		
+		#supported {
+		font-size: 100px;
+		margin-top: -170px;
+		margin-left: 900px;
+		width: 50%;
+		height: 50%;
+		color:rgb(40, 40, 30);
+		font-size: 100px;
+		
+		}
+		
 		.OpisL {
 		float: left;
 		width: 40%;
@@ -263,6 +288,11 @@
 		display: inline-block; 
 		width: 70%;
 		height: 100%;
+		}
+		
+		.supported {
+		color:rgb(40, 40, 30, 0.5);
+		
 		}
 		
 
@@ -423,7 +453,7 @@
 					<br><br><br><br><br><br><br><br><br><br>
 			
 					<div class="title" style="line-height: 300%">
-							<h1 class="subtitle">Cenne Uwagi</h1>
+							<h1 class="subtitle"><u>Cenne Uwagi</u></h1>
 						
 						<div class="PodOpis">
 						
@@ -440,22 +470,27 @@
 			
 		  </div>
 		  
-		  		<cite><sub style="color:rgb(200, 200, 60)">przed podróżowaniem skonsultuj się z lekarzem lub farmaceutą</sub></cite>
+		  		<cite><sub style="color:rgb(200, 200, 60) ; font-size: 20px">Przed podrózowaniem zapoznaj się z treścią ulotki bądź skonsultuj się z lekarzem lub farmaceutą, gdyż każde podróżowanie niewłaściwie stosowane zagraża Twojemu życiu lub zdrowiu</sub></cite>
 		
 				<br><br>
 				
 				<div id="footer">
+				
+				<div id="footer_tresc">
+				
 				  <footer>
 				
-					<table style="width:100%" class="footer">
+				
+				
+					<table style="width:50%" class="footer2">
   <tr>
     <th colspan="2">
-		Źródła
+		<p style="font-size: 45px">ŹRÓDŁA</p>
 	</th>
     
 	
 	<th colspan="2">
-		KONTAKT
+		<p style="font-size: 45px">KONTAKT</p>
 	</th>
   </tr>					
 					
@@ -483,12 +518,24 @@
   </tr>
 
 </table>
-			<p class="subfooter">Supported by
 
-			<a href="https://github.com/griddb/griddb_nosql?gclid=EAIaIQobChMIvJeKotXH5wIVD5SyCh30VQxgEAAYAiAAEgIENvD_BwE">GitHub</a></p>
+		
+
+
+			<div id="supported">
+			
+
+			<p class="supported">Supported by
+
+			<a href="https://github.com/griddb/griddb_nosql?gclid=EAIaIQobChMIvJeKotXH5wIVD5SyCh30VQxgEAAYAiAAEgIENvD_BwE" >GitHub</a></p>
 				  </footer>
-				</div>
+			</div>
+			
+			
 			</div>	
+			
+		</div>
+		</div>
 
 	</body>
 </html>
