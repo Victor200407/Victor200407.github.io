@@ -214,6 +214,10 @@ body{
     margin-top: 10px;
 }
 
+.icon-user{
+    color: rgba(0, 0, 0, 0.225);
+}
+
 a{
     color: white;
 }
