@@ -9,8 +9,7 @@ h2{
 
 body{
     background-color:#034f84;
-    margin: 0px;
-    
+    margin: 0px;    
 }
 
 .container{
@@ -31,13 +30,13 @@ body{
 
 .box{
     width: 31.1%;
-    height: 38%;
+    height: 90%;
     margin: 20px;
     margin-top: 100px;
     background-color: #d0f0e0;
     text-align: center;
     color: darkslategrey;
-    float: left;
+    float: right;
     border-radius: 15px;
     position: relative;
 }
@@ -45,9 +44,11 @@ body{
 .box:hover{
     background-color: #6b7f8d31;
     transition: 0.3s;
+    border-radius: 80px;
+    margin-top: 30px;
+    height: 92%;
+    border-bottom: 40px solid #6d6d6d63;
 }
-
-
 
 .artist{
     width: 40%;
@@ -66,7 +67,7 @@ body{
 
 .content{
     width: 95%;
-    height: 1400px;
+    height: 600px;
     
     text-align: center;
     color: darkslategrey;
@@ -86,15 +87,15 @@ body{
 }
 
 .footer{
-    height: 100px;
-    margin-top: 200px;
+    height: 200px;
+    margin: 0px;
+    margin-top: 200px;    
     background-color: #034f84;
     color: floralwhite;
     text-align: center;
     align-items: center;
-    line-height: 90px;
-    padding: 50px;
-    
+    line-height: -200px;
+    padding-left: 15%;
 }
 
 .info{
@@ -107,12 +108,41 @@ body{
     font-size: 30px;
 
     line-height: 1.5;
-  display: inline-block;
-  vertical-align: middle;
-
-    
+    display: inline-block;
+    vertical-align: middle;
 }
 
+.footerbox{
+    border: #38383834 solid 1px;
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+.footerbox:hover{
+    margin-top: -10px;
+    border-bottom: #1a1a1a4b solid 10px;
+    background-color: #3a78a5;
+    transition: 0.3s;
+}
+
+.bottomtext{
+    font-size: 30px;
+    margin-top: -50px;
+}
+
+#GitHub{
+    font-size: 50px;
+    line-height: 2;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+#GitHub:hover{
+    background-color: #d4951e;
+    transition: 0.3s;
+}
 
 #first{
     
@@ -135,7 +165,7 @@ body{
 }
 
 #third:hover{
-    background-color: #b089e4;
+    background-color: #d498e6;
 }
 
 #fourth{
@@ -160,4 +190,28 @@ body{
 
 #sixth:hover{
     background-color: #8db1da;
+}
+
+.icon-mail-alt{
+    font-size: 90px;
+    line-height: 0;
+    margin-top: 10px;
+    
+}
+
+.icon-phone{
+    font-size: 90px;
+    line-height: 0;
+    margin-top: 10px;
+    
+}
+
+.icon-location{
+    font-size: 90px;
+    line-height: 0;
+    margin-top: 10px;
+}
+
+a{
+    color: white;
 }
