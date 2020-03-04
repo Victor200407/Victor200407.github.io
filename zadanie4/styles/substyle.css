@@ -36,7 +36,8 @@ body{
 }
 
 .img {
-    margin-top: 50px;
+    margin-top: 150px;
+    margin-left: 50px;
     width: 10%;
     float: left;
     padding: 40 px;
@@ -44,7 +45,7 @@ body{
 }
 
 img {
-    width: 1000px;
-    height: 1000px;
+    width: 700px;
+    height: 700px;
     border-radius: 600px;
 }
