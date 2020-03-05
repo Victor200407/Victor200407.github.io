@@ -1,51 +1,120 @@
 body{
-    background-color: #034f84;
+    background-color: #d1dbec;
     margin: 0px;
 }
 
 .container{
-    height: 1000px;
+    min-height: 1000px;
     width: 100%;
 }
 
 .title{
-    margin-top: 70px;
-    line-height: 0px;
-    width: 100%;
-    height: 100px;
-    background-color: #004580;
+    margin-top: -30px;
+    line-height: 500%;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 80px;
+    height: 300px;
+    background-color: #faca72;
     text-align: center;
-    font-size: 30px;
-    color: floralwhite;
+    font-size: 50px;
+    color: darkslategrey;
+    border-bottom: 40px solid #6d6d6d63;
+}
+
+.songname{
+    color: #d1560e;
+    font-size: 50px;
+    line-height: 200px;
+    
+    font-weight: bold;
 }
 
 .content{
+    padding-left: 50px;
     width: 100%;
-    height: 1100px;
-    background-color: floralwhite;
+    min-height: 1200px;
+    
+}
+
+.leftside{
+    width: 47%;
+    height: 100%;
+    float: left;
+
 }
 
 .text{
+    background-color: floralwhite;
+    border-radius: 15px;
+    font-style: oblique;
     width: 30%;
-    height: 600px;
-    padding: 170px;
-    padding-top: 100px;
+    min-height: 1190px;
+    padding: 70px;
+    padding-top: 60px;
+    padding-right: 90px;
+    padding-left: 90px;
     font-size: 30px;
     line-height: 50px;
+    margin-left: 47px;
+    margin-top: 40px;
     float: left;
+}
+
+.info{
+    padding: 40px;
+    width: 95%;
+    height: 100px;
+    margin-left: 70px;
+    margin-top: 40px;
+    float: left;
+    background-color: floralwhite;
+    border-radius: 15px;
+    color: darkslategrey;
+    font-size: 40px;
+    margin-bottom: 20px;
 }
 
 .img {
-    margin-top: 150px;
-    margin-left: 50px;
-    width: 10%;
+    margin-top: 40px;
+    margin-left: 70px;
+    width: 103%;
     float: left;
-    padding: 40 px;
-    height: 10%;
+    height: 900px;
+    clear: both;
 }
 
 img {
-    width: 700px;
-    height: 700px;
-    border-radius: 600px;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    /*border: #faca72 solid 10px;*/
+}
+
+.return{
+    background-color: #da8181;
+    width: 95%;
+    height: 50px;
+    padding: 40px;
+    clear: both;
+    margin-left: 70px;
+    margin-top: 1230px;
+    border-radius: 15px;
+    font-size: 50px;
+    text-align: center;
+    line-height: 45px;
+    color: darkslategrey;
+    background-color: #faca72;
+}
+
+.return:hover{
+    width: 1661px;
+    margin-left: -751px;
+    transition: 0.3s;
+    border-radius: 0px 15px 15px 15px;
+    background-color: #ff6a6a;
+}
+
+a{
+    color: rgba(255, 255, 255, 0);
 }
