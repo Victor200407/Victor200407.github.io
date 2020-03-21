@@ -55,6 +55,8 @@ body{
     border-radius: 10px;
     text-align: center;
     line-height: 6vh;
+
+    transition-duration: 0.2s;
 }
 
 .button:hover{
@@ -96,13 +98,15 @@ a{
     padding-top: 4vh;
     height: 70%;
     
+    transition-duration: 0.2s;
 }
 
 .navbox:hover{
     transition: 0.3s;
-    color: aliceblue;
-    padding-top: 32px;
-    text-shadow: #EAE7DC 0px -10px;
+    color: #42413e;
+    padding-top: 48px;
+    text-shadow: aliceblue 0px -10px;
+
 }
 
 .mainbox{
@@ -118,6 +122,7 @@ a{
     line-height: 5.5vh;
     margin-right: 0.5vw;
     
+    transition-duration: 0.2s;
 }
 
 .mainbox:hover{
@@ -243,6 +248,8 @@ a{
     padding-top: 0.2%;
     border-bottom: #E98074 solid 3px;
     color: #E85A4F;
+
+    transition-duration: 0.2s;
 }
 
 .footerlink:hover{
@@ -251,5 +258,5 @@ a{
     color: #42413e;
     
     border-left: #ffffff50 solid 8px;
-    border-right: #ffffff50 solid 8px;
+    padding-left: 4%;
 }
