@@ -51,8 +51,20 @@ html{
     color: #c9707000;
 }
 
+.textcontainer{
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
 a{
     text-decoration: none;
+}
+
+h1{
+    font-size: 7rem;
+    padding-left: 10%;
+    color: #c97070;
 }
 
 
@@ -86,7 +98,9 @@ a{
         font-size: 1.1rem;
     }
     
-
+    h1{
+        font-size: 2.2rem;
+    }
 }
 
 
@@ -106,6 +120,9 @@ a{
     p{
         font-size: 1.4rem;
     }
+    h1{
+        font-size: 3.2rem;
+    }
 }
 
 @media (min-width: 768px){
@@ -123,6 +140,10 @@ a{
 
     p{
         font-size: 1.5rem;
+    }
+
+    h1{
+        font-size: 4.5rem;
     }
 }
 
@@ -142,6 +163,10 @@ a{
     p{
         font-size: 1.6rem;
     }
+
+    h1{
+        font-size: 6rem;
+    }
 }
 
 @media (min-width: 1200px){
@@ -160,11 +185,16 @@ a{
     p{
         font-size: 2rem;
     }
+
+    h1{
+        font-size: 7rem;
+    }
 }
 
 @media (orientation: landscape) and (max-width: 1575px){
     .titlebox{
-        padding-top: -35vh;
+        padding-top: 35vh;
         padding-bottom: 10vh;
+        height: 35vh;
     }
 }
