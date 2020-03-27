@@ -39,7 +39,7 @@ html{
     font-size: 200%;
     color: whitesmoke;
     padding-bottom: 10vh;
-    transition-duration: 0.25s;
+    transition-duration: 0.1s;
 }
 
 .button:hover{
@@ -61,8 +61,8 @@ a{
 @media (orientation: portrait){
     .titlebox{
         height: 50%;
-        padding-top: 25vh;
-        height: 35vh;
+        padding-top: 15vh;
+        height: 20vh;
     }
 
 }
@@ -79,11 +79,11 @@ a{
     }
 
     .button{
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 
     p{
-        font-size: 0.8rem;
+        font-size: 1.1rem;
     }
 
 }
@@ -99,11 +99,11 @@ a{
     }
 
     .button{
-        font-size: 1.3rem;
+        font-size: 1.7rem;
     }
 
     p{
-        font-size: 1rem;
+        font-size: 1.4rem;
     }
 }
 
@@ -117,11 +117,11 @@ a{
     }
 
     .button{
-        font-size: 1.5rem;
+        font-size: 2.1rem;
     }
 
     p{
-        font-size: 1.3rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -135,11 +135,11 @@ a{
     }
 
     .button{
-        font-size: 2rem;
+        font-size: 2.8rem;
     }
 
     p{
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
 }
 
@@ -153,7 +153,7 @@ a{
     }
 
     .button{
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
     p{
