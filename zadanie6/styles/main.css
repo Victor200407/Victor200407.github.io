@@ -56,6 +56,17 @@ html{
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: 3%;
+    padding-top: 3%;
+}
+
+#white{
+
+
+}
+
+#green{
+    background-color: teal;
+    color: whitesmoke;
 }
 
 a{
@@ -64,7 +75,7 @@ a{
 
 h1{
     font-size: 7rem;
-    padding-left: 10%;
+    padding-left: 0%;
     color: #c97070;
 }
 
