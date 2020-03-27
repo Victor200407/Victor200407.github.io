@@ -85,6 +85,7 @@ a{
     p{
         font-size: 1.1rem;
     }
+    
 
 }
 
@@ -158,5 +159,12 @@ a{
 
     p{
         font-size: 2rem;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 1575px){
+    .titlebox{
+        padding-top: 35vh;
+        padding-bottom: 10vh;
     }
 }
