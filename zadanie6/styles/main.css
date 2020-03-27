@@ -15,7 +15,7 @@ html{
     width: 100%;
     height: 50vh;
     padding-top: 30vh;
-    background-color: #daae9a;
+    background-color: whitesmoke;
 }
 
 .title{
@@ -35,10 +35,10 @@ html{
 .button{
     width: 100%;
     height: 10vh;
-    background-color: #daae9a;
+    background-color: whitesmoke;
     text-align: center;
     font-size: 200%;
-    color: whitesmoke;
+    color: teal;
     padding-bottom: 10vh;
     transition-duration: 0.1s;
 }
@@ -203,7 +203,7 @@ h1{
     }
 }
 
-@media (orientation: landscape) and (max-width: 1575px){
+@media (orientation: landscape) and (max-width: 1199px){
     .titlebox{
         padding-top: 35vh;
         padding-bottom: 10vh;
