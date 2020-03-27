@@ -29,6 +29,7 @@ html{
    font-size: 70px; 
    text-align: center;
    color: #c97070;
+
 }
 
 .button{
@@ -60,7 +61,6 @@ a{
 
 @media (orientation: portrait){
     .titlebox{
-        height: 50%;
         padding-top: 15vh;
         height: 20vh;
     }
@@ -164,7 +164,7 @@ a{
 
 @media (orientation: landscape) and (max-width: 1575px){
     .titlebox{
-        padding-top: 35vh;
+        padding-top: -35vh;
         padding-bottom: 10vh;
     }
 }
