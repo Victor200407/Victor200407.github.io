@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Sen';
+    scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
@@ -95,6 +96,15 @@ html{
     color: whitesmoke;
 }
 
+#green2{
+    background-color: teal;
+    color: whitesmoke;
+}
+
+.red{
+    color: #E98074;
+}
+
 a{
     text-decoration: none;
 }
@@ -105,8 +115,53 @@ h1{
     color: #c97070;
 }
 
+.footercontainer{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: blueviolet;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+}
+
+.footercontainer > div {
+    width: 33%;
+}
+
+.footerline{
+    border-right: 3px whitesmoke solid;
+    margin-right: 2%;
+}
+
+a {
+    color: #E98074;
+}
+
+a:hover{
+    transition: 0.3s;
+    color: whitesmoke;
+}
 
 
+
+
+
+
+
+
+
+
+
+.footerleft {
+    width: 60%;
+    border-right: #f5f5f5cc solid 2px;
+}
+
+.footerright {
+    width: 30%;
+    border-bottom: #f5f5f5cc solid 2px;
+}
 
 
 @media (orientation: portrait){
