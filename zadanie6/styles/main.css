@@ -73,7 +73,7 @@ html{
     position: absolute;
     top: 0vh;
     color: whitesmoke;
-    height: 30%;
+    height: 70%;
     width: 100%;
     text-align: center;
 }
@@ -164,13 +164,7 @@ a:hover{
 }
 
 
-@media (orientation: portrait){
-    .titlebox{
-        padding-top: 15vh;
-        height: 20vh;
-    }
 
-}
 
 
 
@@ -290,4 +284,17 @@ a:hover{
         padding-bottom: 10vh;
         height: 35vh;
     }
+
+}
+
+@media (orientation: portrait){
+    .titlebox{
+        padding-top: 15vh;
+        height: 20vh;
+    }
+
+    .button2{
+        height: 30%;
+    }
+
 }
