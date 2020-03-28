@@ -299,6 +299,11 @@ a:hover{
 
     .title{
         color: teal;
+        font-size: 8vh;
+    }
+
+    .subtitle{
+        font-size: 5vh;
     }
 
     .button{
