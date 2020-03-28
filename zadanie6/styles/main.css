@@ -65,7 +65,7 @@ html{
 
 @keyframes pulse{
     0% {color: teal;}
-    50% {color: #ffffff;}
+    50% {color: #00808073;}
     100% {color: teal;}
 }
 
