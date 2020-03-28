@@ -289,12 +289,26 @@ a:hover{
 
 @media (orientation: portrait){
     .titlebox{
-        padding-top: 15vh;
-        height: 20vh;
+        padding-top: 8vh;
+        height: 6vh;
     }
 
     .button2{
         height: 30%;
     }
 
+    .title{
+        color: teal;
+    }
+
+    .button{
+        color: rgba(245, 245, 245, 0);
+    }
+
+    .button:hover{
+        transition: 1s;
+        
+        background-color: whitesmoke;
+        color: rgba(245, 245, 245, 0);
+    }
 }
