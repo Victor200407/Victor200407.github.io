@@ -59,6 +59,14 @@ html{
     color: teal;
     padding-bottom: 10vh;
     transition-duration: 1.1s;
+
+
+}
+
+@keyframes pulse{
+    0% {color: teal;}
+    50% {color: #ffffff;}
+    100% {color: teal;}
 }
 
 .button:hover{
@@ -278,6 +286,8 @@ a:hover{
     }
 }
 
+
+
 @media (orientation: landscape) and (max-width: 1199px){
     .titlebox{
         padding-top: 35vh;
@@ -316,4 +326,11 @@ a:hover{
         background-color: whitesmoke;
         color: rgba(245, 245, 245, 0);
     }
+}
+
+@media (orientation: landscape){
+    .button{
+        animation: pulse 5s ease-out 2s infinite alternate;
+        animation-name: pulse;
+        animation-duration: 2s;
 }
