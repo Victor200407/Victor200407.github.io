@@ -293,29 +293,7 @@ a:hover{
 
 
 
-@media (orientation: landscape) and (max-width: 1199px){
-    .titlebox{
-        padding-top: 35vh;
-        padding-bottom: 10vh;
-        height: 35vh;
-    }
 
-    .title{
-        color: teal;
-    }
-
-    .button{
-        color: rgba(245, 245, 245, 0);
-    }
-
-    .button:hover{
-        transition: 1s;
-        
-        background-color: whitesmoke;
-        color: rgba(245, 245, 245, 0);
-    }
-
-}
 
 @media (orientation: portrait){
     .titlebox{
@@ -354,4 +332,34 @@ a:hover{
         animation-name: pulse;
         animation-duration: 2s;
     }
+}
+
+@media (orientation: landscape) and (max-width: 1199px){
+    .titlebox{
+        padding-top: 35vh;
+        padding-bottom: 10vh;
+        height: 35vh;
+    }
+
+    .title{
+        color: teal;
+    }
+
+    .button{
+        color: rgba(245, 245, 245, 0);
+    }
+
+    .button{
+        animation: pulse 0s ease-out 0s infinite alternate;
+        animation-name: pulse;
+        animation-duration: 0s;
+    }
+
+    .button:hover{
+        transition: 1s;
+        
+        background-color: whitesmoke;
+        color: rgba(245, 245, 245, 0);
+    }
+
 }
