@@ -142,7 +142,7 @@ h1{
 }
 
 .footerline{
-    border-right: 3px whitesmoke solid;
+    border-right: 2px whitesmoke solid;
     margin-right: 2%;
 }
 
@@ -298,6 +298,21 @@ a:hover{
         padding-top: 35vh;
         padding-bottom: 10vh;
         height: 35vh;
+    }
+
+    .title{
+        color: teal;
+    }
+
+    .button{
+        color: rgba(245, 245, 245, 0);
+    }
+
+    .button:hover{
+        transition: 1s;
+        
+        background-color: whitesmoke;
+        color: rgba(245, 245, 245, 0);
     }
 
 }
