@@ -212,7 +212,11 @@ a:hover{
     }
 
     #scalldown{
-        width: 20%;;
+        width: 20%;
+    }
+
+    #scalldown_p{
+        font-size: 0.96rem;
     }
     
     .footerline{
