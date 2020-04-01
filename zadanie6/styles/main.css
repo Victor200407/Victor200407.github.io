@@ -210,6 +210,14 @@ a:hover{
     h1{
         font-size: 2.2rem;
     }
+
+    #scalldown{
+        width: 20%;;
+    }
+    
+    .footerline{
+        border-right: 0.4vw whitesmoke solid;
+    }
 }
 
 
