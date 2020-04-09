@@ -149,6 +149,77 @@ img{
 /* ------------------------------------------     @media odpowiada za responsywność      ------------------------------------------ */
 
 
+@media (max-width: 375px){      /* jeżeli szerokość <= 575 to */
+    .title{
+        font-size: 3rem;
+    }
+
+    .subtitle{
+        font-size: 1rem;
+    }
+
+    p{
+        font-size: 0.1rem;
+    }
+    
+    h1{
+        font-size: 2.2rem;
+    }
+
+    #textbox{
+        width: 60%;
+    }
+
+    .textimg{
+        opacity: 0;
+    }   
+
+    #button{
+        width: 16vw;
+        height: 7vh;
+        border-radius: 2vh;
+        bottom: 16vh;
+        left: 42vw;
+        font-size: 120%;
+    }
+}
+
+
+@media (max-width: 575px){      /* jeżeli szerokość <= 575 to */
+    .title{
+        font-size: 3rem;
+    }
+
+    .subtitle{
+        font-size: 1rem;
+    }
+
+    p{
+        font-size: 0.5rem;
+    }
+    
+    h1{
+        font-size: 2.2rem;
+    }
+
+    #textbox{
+        width: 60%;
+    }
+
+    .textimg{
+        opacity: 0;
+    }   
+
+    #button{
+        width: 16vw;
+        height: 7vh;
+        border-radius: 2vh;
+        bottom: 16vh;
+        left: 42vw;
+        font-size: 120%;
+    }
+}
+
 @media (max-width: 895px){      /* jeżeli szerokość <= 575 to */
     .title{
         font-size: 3rem;
@@ -265,6 +336,10 @@ img{
 
     p{
         font-size: 1.5rem;
+    }
+
+    #textbox p{
+        line-height: 55%;
     }
 
     h1{
