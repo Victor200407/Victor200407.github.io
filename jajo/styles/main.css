@@ -481,6 +481,13 @@ img{
         line-height: 95%;
     }
 
+    #textbox {
+        font-size: 40%;
+        line-height: 10vh;
+        line-height: normal;
+        line-height: 95%;
+    }
+
     #imgbox{
         margin: 0 auto;
         padding-top: 10vh;
