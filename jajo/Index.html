@@ -1,0 +1,124 @@
+
+
+
+<!--              READ ME                  -->
+
+<!--  No to ten, usuń wszystkie komentarze, pozmieniaj kolory, dodaj własną treść oraz ciesz się życiem  
+    
+    Jeżeli jesteś strasznie ambitny/ambitna to pozmieniaj nazwy klas i wgl
+
+  
+-->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Ta linika pomaga w responsywności? Ponoć ważne-->
+
+    <link rel="stylesheet" href="styles/main.css" type="text/css">
+    <!--Zalikowanie styli zewnętrznych-->
+
+    <link href='https://fonts.googleapis.com/css?family=Sen' rel='stylesheet'>
+    <!--TUTAJ PODMIENIASZ LINK - GOOGLE FONTS-->
+
+    <title>Tytuł</title>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script> 
+    $(document).ready(function(){
+        $(button).click(function(){
+ 
+                    $("#imgbox").slideToggle({
+                    display: 'none'
+                    });
+
+                    $("#textbox").animate({
+                    opacity: '1',
+                    marginTop: '7vh',
+                    padding: '0.1vh',
+                    paddingBottom: '5vh'
+                    });   
+
+                    $("#textimg").animate({
+                        opacity: '1',
+                    bottom: '200px'
+                    });  
+        });
+        
+    });
+
+
+  
+
+    var next_move = "expand";
+$(document).ready(function (){
+$("button").click(function()
+{
+    var css = {};
+    if (next_move == "expand"){
+        css = {
+
+        };
+        next_move = "shrink";
+    } else {
+        css = {
+            
+        };     
+        next_move = "expand";
+    }
+    $(this).animate(css, 190);
+});
+});
+
+    </script>
+    
+</head>
+<body>
+
+    <!--  TUTAJ JEST TYTUŁ  -->
+        <header>
+            <div class="container">
+            
+                <div id="imgbox">
+                    <img src="img/jajo2.png" alt="JaJo">
+                </div>
+
+                    <div id="textbox">
+                        <h1>Życzenia</h1>
+                        <p>Aby Wielkanoc w tym właśnie roku,</p>
+                        <p>nadeszła z dużym sukcesem u Twego boku,</p>
+                        <p> aby życie układało Wam się zdrowo,</p>
+                        <p>zarówno prywatnie jak i zawodowo.</p>
+                        <p>Jak najwięcej chwil radosnych,</p>
+                        <p>i przepięknej wiosny!</p>
+                    </div>
+
+                    <div class="textimg">
+                        <img src="img/bazia22.png" alt="bazia">
+                    </div>
+
+                    <!--
+                    <div class="textimg" id="rightbazia">
+                        <img src="img/bazia22.png" alt="bazia">
+                    </div>
+                    -->
+                
+                <button id="button">Click Me!</button>
+
+            </div>
+        </header>    
+    <!--  TUTAJ JEST TYTUŁ  -->
+  
+
+    
+    
+    
+</body>
+</html>

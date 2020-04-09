@@ -1,0 +1,425 @@
+
+
+/*
+               READ ME                 
+
+     No to ten, usuń wszystkie komentarze, pozmieniaj kolory, dodaj własną treść oraz ciesz się życiem  
+
+    Jeżeli jesteś strasznie ambitny/ambitna to pozmieniaj nazwy klas
+
+    I możesz też zmienić czcionkę, jest to google fonts, jeśli nie wiesz jak to robić to link poniżej
+         
+            https://www.w3schools.com/howto/howto_google_fonts.asp
+
+            1. Znajduszesz jakąś spoko czcionkę i klikasz "Try It" (CZCIONKI ZNAJDUJĄ SIĘ NŻEJ, MUSISZ ZJECHAĆ W DÓŁ, zielony przycisk po prawo)
+            2. Pokazuj Ci się kod po lewej stronie
+            3. Kopiujesz <link href....> z kodu z tej strony i wklejasz do swojego kodu html (w <head>) zamiast starego <link href....> (oznaczone  <!--TUTAJ PODMIENIASZ LINK - GOOGLE FONTS-->)
+            4. Ze wcześniejszej stronki kopiujesz jeszcze coś co wygląda jak to co napisane jest poniżej (ten body), wklejasz do pliku CSS (właśnie się w nim znajdujesz) zamiast tego co 
+            jest oznaczone <!--TUTAJ PODMIENIASZ font-family - GOOGLE FONTS-->, NIE USUWAJ CAŁEJ ZAWARTOŚCI <BODY>, PODMIEŃ TYLKO font-family
+                    
+                    body {
+                        font-family: 'Font który wybrałeś';
+                    }
+
+
+
+                    No, i to chyba tyle. Powodzenia :)
+   
+*/
+
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    
+    font-family: 'Sen';
+    /*  <!--TUTAJ PODMIENIASZ font-family - GOOGLE FONTS--> */
+
+    scroll-behavior: smooth;
+}
+html{
+    scroll-behavior: smooth;
+    /* To się przydaje jak dalesz znaczkik <a> do jakiegoś id na stronie 
+        Wtedy przewijanie jest takie gładziutkie że aż mmmm-miło */
+}
+
+
+.container{
+    margin: 0 auto;
+    height: 100vh;
+    background: #eeaeca;
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+
+    overflow: hidden;
+}
+
+#button{
+    margin: 0 auto;
+    width: 16vw;
+    height: 7vh;
+    background-color: transparent;
+    border-radius: 2vh;
+    border: #ffffff 0.3vh solid;
+    position: absolute;
+    bottom: 16vh;
+    left: 42vw;
+    font-family: 'sen';
+    text-align: center;
+    font-size: 200%;
+    color: #ffffff;
+}
+
+#button:hover{
+    transition: 0.3s;
+    background-color: #ffffff;
+    color: #eeaeca;
+  
+}
+
+#button:active{
+    transition: 0.1s;
+    background-color: transparent;
+    color: #ffffff;
+}
+
+button:focus {
+    outline:0;
+}
+
+#imgbox{
+    
+    margin: 0 auto;
+    padding-top: 3%;
+    width: 34%;
+    width: 68vh;
+    height: 90%;
+
+  
+}
+
+#textbox{
+    margin: 0 auto;
+    margin-top: 100vh;
+    background-color: 80%;
+    height: 60%;
+    width: 50%;
+
+    
+
+    text-align: center;
+
+    font-family: 'Sen';
+    color: #ffffff;
+    font-size: 150%;
+
+    box-shadow: #0000007c 0px 0px 10vh 1vh;
+}
+
+#textbox p{
+    line-height: 55%;
+}
+
+#textbox h1{
+    line-height: 95%;
+}
+
+img{
+    width: 100%;
+}
+
+.textimg{
+    margin: 0 auto;
+    margin-left: -5vw;
+    margin-top: -50vh;
+    width: 50%;
+
+    float: left;
+}
+
+/*
+#rightbazia{
+    margin-left: 5vw;
+    margin-top: -60vh;
+}
+*/
+
+
+/* ------------------------------------------     @media odpowiada za responsywność      ------------------------------------------ */
+
+
+@media (max-width: 895px){      /* jeżeli szerokość <= 575 to */
+    .title{
+        font-size: 3rem;
+    }
+
+    .subtitle{
+        font-size: 1rem;
+    }
+
+    p{
+        font-size: 1.1rem;
+    }
+    
+    h1{
+        font-size: 2.2rem;
+    }
+
+    #textbox{
+        width: 60%;
+    }
+
+    .textimg{
+        opacity: 0;
+    }   
+
+    #button{
+        width: 16vw;
+        height: 7vh;
+        border-radius: 2vh;
+        bottom: 16vh;
+        left: 42vw;
+        font-size: 120%;
+    }
+}
+
+
+@media (min-width: 896px){      /* jeżeli szerokość >= 576 to */
+    .title{
+        font-size: 4rem;
+    }
+
+    .subtitle{
+        font-size: 2rem;
+    }
+
+    p{
+        font-size: 1.4rem;
+    }
+    h1{
+        font-size: 3.2rem;
+        color: chartreuse;
+    }
+
+    #textbox{
+        width: 60%;
+    }
+
+    .textimg{
+        opacity: 0;
+    }   
+
+    #button{
+        width: 16vw;
+        height: 7vh;
+        border-radius: 2vh;
+        bottom: 16vh;
+        left: 42vw;
+        font-size: 160%;
+    }
+}
+
+@media (min-width: 1128px){  /* jeżeli szerokość >= 768 to */
+    .title{
+        font-size: 6rem;
+    }
+
+    .subtitle{
+        font-size: 3rem;
+    }
+
+    p{
+        font-size: 1.5rem;
+    }
+
+    h1{
+        font-size: 4.5rem;
+        color: brown;
+    }
+
+    #textbox{
+        width: 60%;
+    }
+
+    .textimg{
+        opacity: 1;
+    }   
+
+    #button{
+        width: 16vw;
+        height: 7vh;
+        border-radius: 2vh;
+        bottom: 16vh;
+        left: 42vw;
+        font-size: 200%;
+    }
+}
+
+@media (min-width: 1302px){  /* jeżeli szerokość >= 992 to */
+    .title{
+        font-size: 8rem;
+    }
+
+    .subtitle{
+        font-size: 4rem;
+    }
+
+    p{
+        font-size: 1.5rem;
+    }
+
+    h1{
+        font-size: 6rem;
+        color: blue;
+    }
+
+    #textbox{
+        width: 60%;
+    }
+
+    .textimg{
+        opacity: 1;
+    }   
+
+    #button{
+        width: 16vw;
+        height: 7vh;
+        border-radius: 2vh;
+        bottom: 16vh;
+        left: 42vw;
+        font-size: 200%;
+    }
+
+    
+}
+
+@media (min-width: 1585px){ /* jeżeli szerokość >= 1200 to */
+    .title{
+        font-size: 10rem;
+    }
+
+    .subtitle{
+        font-size: 5rem;
+    }
+
+
+    p{
+        font-size: 2rem;
+    }
+
+    h1{
+        font-size: 7rem;
+        color: black;
+    }
+
+    #textbox{
+        width: 50%;
+    }
+
+    .textimg{
+        opacity: 1;
+    }   
+
+    #button{
+        width: 16vw;
+        height: 7vh;
+        border-radius: 2vh;
+        bottom: 16vh;
+        left: 42vw;
+        font-size: 200%;
+    }
+    
+}
+
+@media (orientation: portrait){
+    #button{
+        width: 50vw;
+        height: 10vh;
+        border-radius: 2vh;
+        bottom: 10vh;
+        left: 25vw;
+        font-size: 200%;
+    }
+
+    #textbox{
+        margin: 0 auto;
+        margin-top: 100vh;
+        background-color: 80%;
+        height: 60%;
+        width: 90%;
+
+        font-size: 250%;
+    
+        box-shadow: #0000007c 0px 0px 10vh 0vh;
+    }
+
+    p{
+        font-size: 60%;
+        line-height: 10vh;
+        line-height: normal;
+    }
+
+    #textbox p{
+        line-height: 95%;
+    }
+
+    #imgbox{
+        margin: 0 auto;
+        padding-top: 10vh;
+        width: 34%;
+        width: 100%;
+        height: 90%;
+    }
+
+    img{
+        width: 100%;
+    }
+
+}
+
+@media (orientation: portrait) and (max-height: 600px){
+    #button{
+        width: 50vw;
+        height: 10vh;
+        border-radius: 2vh;
+        bottom: 10vh;
+        left: 25vw;
+        font-size: 200%;
+    }
+
+    #textbox{
+        margin: 0 auto;
+        margin-top: 100vh;
+        background-color: 80%;
+        height: 60%;
+        width: 90%;
+
+        font-size: 250%;
+    
+        box-shadow: #0000007c 0px 0px 10vh 0vh;
+    }
+
+    p{
+        font-size: 40%;
+        line-height: 10vh;
+        line-height: normal;
+    }
+
+    #textbox p{
+        line-height: 95%;
+    }
+
+    #imgbox{
+        margin: 0 auto;
+        padding-top: 10vh;
+        width: 34%;
+        width: 100%;
+        height: 90%;
+    }
+
+    img{
+        width: 100%;
+    }
+
+}
