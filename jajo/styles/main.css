@@ -199,7 +199,6 @@ img{
     }
     h1{
         font-size: 3.2rem;
-        color: chartreuse;
     }
 
     #textbox{
@@ -235,7 +234,6 @@ img{
 
     h1{
         font-size: 4.5rem;
-        color: brown;
     }
 
     #textbox{
@@ -271,7 +269,6 @@ img{
 
     h1{
         font-size: 6rem;
-        color: blue;
     }
 
     #textbox{
@@ -310,7 +307,6 @@ img{
 
     h1{
         font-size: 7rem;
-        color: black;
     }
 
     #textbox{
@@ -337,7 +333,7 @@ img{
         width: 50vw;
         height: 10vh;
         border-radius: 2vh;
-        bottom: 10vh;
+        bottom: 7vh;
         left: 25vw;
         font-size: 200%;
     }
