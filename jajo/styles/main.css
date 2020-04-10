@@ -52,6 +52,8 @@ html{
     background: #eeaeca;
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 
+    
+
     overflow: hidden;
 }
 
@@ -339,7 +341,7 @@ img{
     }
 
     #textbox p{
-        line-height: 55%;
+        line-height: calc(2vh / 200%);
     }
 
     h1{
@@ -363,6 +365,7 @@ img{
         font-size: 200%;
     }
 
+
     
 }
 
@@ -377,7 +380,7 @@ img{
 
 
     p{
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 
     h1{
@@ -386,6 +389,12 @@ img{
 
     #textbox{
         width: 50%;
+    }
+
+    #textbox p{
+        line-height: calc(1vh / 100px);
+        margin: 0;
+        margin: calc(1vh * 2.6);
     }
 
     .textimg{
@@ -400,6 +409,7 @@ img{
         left: 42vw;
         font-size: 200%;
     }
+
     
 }
 
