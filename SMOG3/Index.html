@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css" type="text/css">
+
+    <link href='https://fonts.googleapis.com/css?family=Sen' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Abril Fatface' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="fontello/css/fontello.css" type="text/css" />
+
+    <!-- <script type="text/javascript" src="scripts/main.js"></script> -->
+
+    <!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script> 
+    $(document).ready(function(){
+        $(button).click(function(){
+ 
+                    $("#roleta").slideToggle({
+                    height: '50%',
+                    });
+
+                    $(".titlecontainer").slideToggle({
+                    height: '50%',
+                    });
+        });
+    });
+    </script>
+    -->
+    <title>Title</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+
+        $(function() {
+            
+            $(".toggle").on("click", function(){
+                
+                if($(".item").hasClass("active")){
+                    $(".item").removeClass("active");
+                    console.log("remove");
+                }
+                else{
+                    $(".item").addClass("active");
+                    console.log("add");
+                }
+
+            })
+
+        });
+
+    </script>
+
+</head>
+<body onload="odliczanie();">
+    <div class="container" id="home">
+        
+        <nav>
+            <ul class="menu">
+                <li class="logo"><a href="#">Pozostałe Projekty</a></li>
+                <li class="item"><a href="#">Home</a></li>
+                <li class="item"><a href="#">About</a></li>
+                <li class="item"><a href="#">Contact</a></li>
+                <li class="toggle"><span class="bars"></span></li>    
+            </ul>
+        </nav>
+
+
+        <header>
+            
+            <div id="titleContainer"><h1>Title</h1></div>
+
+            <a href="#main">
+                <div id="headerButton">Dalej<i class="demo-icon icon-angle-down"></i></div>
+            </a>
+            
+
+        </header>
+        
+        
+
+        <main id="main">
+            main
+        </main>
+
+        <section>
+            section
+        </section>
+
+        <aside>
+            aside
+        </aside>
+
+        <footer id=footer>
+            footer
+        </footer>
+    </div>
+</body>
+</html>

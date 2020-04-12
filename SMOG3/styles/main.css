@@ -1,0 +1,362 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: floralwhite;
+}
+
+html{
+    scroll-behavior: smooth;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: minmax(7.5vh, auto );
+    max-width: 100%;
+    margin: 0 auto;
+    grid-gap: 0px;
+    grid-template-areas: 
+    "nav nav nav nav nav"
+
+    "header header header header header"
+    "header header header header header"
+    "header header header header header"
+    "header header header header header"
+    "header header header header header"
+    "header header header header header"
+    "header header header header header"
+    "header header header header header"
+    "header header header header header"
+    "header header header header header"
+    "header header header header header"
+    "header header header header header"
+    "header header header header header"
+    
+    "main main main aside aside"
+
+    
+    "section section section section section" 
+    "section section section section section"      
+    "section section section section section"   
+
+    "footer footer footer footer footer"
+    "footer footer footer footer footer"
+    ;
+   
+}
+
+.container{
+    font-size: 25px;
+}
+
+.container > * {
+    color: whitesmoke;
+}
+
+/*----------------NAV ELEMENTS----------------*/
+nav{
+    grid-area: nav;
+    background-color: #242424;
+    padding: 5px 20px;
+}
+
+ul{
+    list-style-type: none;
+}   
+
+a{
+    color: #eeeeee;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.menu li{
+    font-size: 16px;
+    padding: 15px 5px;
+}
+.menu li a{
+    display: block;
+} 
+
+.logo a{
+    font-size: 20px;
+}
+.logo{
+
+}
+
+/*MOBILE MENU*/
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle{
+    order: 1;
+}
+.item{
+    width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
+}
+
+.item.active{
+    display: block;
+}
+
+
+
+.toggle{
+    cursor: pointer;
+}
+
+.bars{
+    background-color: #999;
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+}
+
+.bars::before,.bars::after{
+    background-color: #999;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: absolute;
+    width: 18px;
+}
+.bars::before{
+    top: 5px
+}
+.bars::after{
+    top: -5px
+}
+
+/* TABLET MENU */
+
+@media all and (min-width: 576px){
+    .menu{
+        justify-content: center;
+    }
+
+    .logo{
+        flex: 1;
+    }
+
+    .toggle{
+        order: 2;
+    }   
+
+
+}
+
+/* DESKTOP */
+
+@media all and (min-width: 768px){
+
+    .item{
+        display: block;
+        width: auto;
+    }
+    .toggle{
+        display: none;
+    }
+    .logo{
+        order: 0;
+    }
+    .item{
+        order: 1;
+        width: 7%;
+    }
+
+    .menu li{
+        padding: 15px 10px;
+    }
+
+    
+
+}
+
+
+
+
+
+/* https://www.youtube.com/watch?v=6pidsgeLLzE */
+/*----------------NAV ELEMENTS----------------*/
+
+
+
+
+
+/*----------------HEADER ELEMENTS----------------*/
+header{
+    grid-area: header;
+
+    text-align: center;
+    position: relative;
+
+    background: rgb(76,69,78);
+    background: radial-gradient(circle, rgba(76,69,78,1) 0%, rgba(46,51,48,1) 100%);
+}
+    /*--------TITLE--------*/
+    #titleContainer{
+        background-color: rgba(255, 99, 71, 0); /*WIP*/
+
+        margin-top: 10%;
+
+        padding-left: 10%;
+        padding-right: 10%;
+
+        font-size: 7rem;
+    }
+    /*--------TITLE--------*/
+
+    /*--------BUTTON--------*/
+    #headerButton{
+        position: absolute;
+        bottom: 18%;
+        left: 42.4vw;
+        width: 15vw;
+
+        text-align: center;
+
+        padding-top: 1%;
+        padding-bottom: 1%; 
+
+        color: #eeeeee;
+
+        border: #eeeeee 0.1vh solid;
+        border-radius: 1vw;
+
+        transition: all 0.3s ease 0s;
+    }
+
+    #headerButton:hover{
+        border: #eeeeee 0.1vw solid;
+        background-color: #eeeeee;
+        color: #4c454e;
+    }
+    /*--------BUTTON--------*/     
+/*----------------HEADER ELEMENTS----------------*/
+
+
+aside{
+    grid-area: aside;
+    background-color: burlywood;
+}
+
+main{
+    grid-area: main;
+    background-color: olivedrab;
+}
+
+
+section{
+    grid-area: section;
+    background-color: chocolate;
+}
+
+footer{
+    grid-area: footer;
+    background-color: #4d433b;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+button:focus {
+    outline:0;
+}
+
+
+
+
+
+@media (orientation:portrait) and (max-width: 575px){
+    .container {
+        font-size: 1rem;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-auto-rows: minmax(12,5vh, auto );
+        max-width: 100%;
+        margin: 0 auto;
+    
+        grid-template-areas: 
+
+        "nav nav nav nav nav"
+
+        "header header header header header"
+        "header header header header header"
+        "header header header header header"
+        "header header header header header"
+
+        
+        "main main main aside aside"
+
+        "section section section section section" 
+        "section section section section section"      
+        "section section section section section"           
+      
+        "footer footer footer footer footer"
+        ;
+    }
+
+    #titleContainer > h1{
+        font-size: 4rem;
+    }
+
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------------------------- */
+
+@media (max-width: 575px){      /* jeżeli szerokość <= 575 to */
+
+}
+
+
+@media (min-width: 576px){      /* jeżeli szerokość >= 576 to */
+
+}
+
+@media (min-width: 768px){  /* jeżeli szerokość >= 768 to */
+
+}
+
+@media (min-width: 992px){  /* jeżeli szerokość >= 992 to */
+
+}
+
+@media (min-width: 1200px){ /* jeżeli szerokość >= 1200 to */
+
+}
+
+
+
+@media (orientation: portrait){     /* jeżeli orientacja jest pionowa to */
+
+}
+
+
+@media (orientation: landscape) and (max-width: 991px){     /* jeżeli orientacja jest pozioma ORAZ szerokość <= 991 to */
+
+
+}
