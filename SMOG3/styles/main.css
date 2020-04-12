@@ -304,7 +304,7 @@ button:focus {
         "header header header header header"
         "header header header header header"
         "header header header header header"
-        "header header header header header"
+
 
         
         "main main main aside aside"
@@ -315,10 +315,16 @@ button:focus {
       
         "footer footer footer footer footer"
         ;
+
+        
     }
 
     #titleContainer > h1{
         font-size: 4rem;
+    }
+
+    #headerButton{
+        display: none;
     }
 
 }
