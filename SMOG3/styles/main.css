@@ -182,8 +182,8 @@ nav:not(item) a:hover
     }   
 
     .item{
-        padding: 0% 0px;
-        margin-top: 0%;
+        padding: 5% 0px;
+    margin-top: 10%;
     }
 
 
@@ -208,7 +208,7 @@ nav:not(item) a:hover
     }
     .item{
         order: 1;
-        width: 7%;
+        width: 8%;
     }
 
     .menu li{
@@ -526,6 +526,10 @@ button:focus {
         font-size: 1rem; 
         line-height: 5vh;
     }
+
+    #headerButton{
+        display: none;
+    }
 }
 
 
@@ -534,16 +538,20 @@ button:focus {
         font-size: 1rem;
     }
     .footerTitle{
-        font-size: 2.3rem;
+        font-size: 2rem;
     }
 
     .footerSubTitle{
-        font-size: 2rem;
+        font-size: 1.3rem;
     }
 
     .footerContact{
         font-size: 1rem; 
         line-height: 5vh;
+    }
+
+    #headerButton{
+        display: none;
     }
 }
 
@@ -556,12 +564,16 @@ button:focus {
     }
 
     .footerSubTitle{
-        font-size: 2rem;
+        font-size: 1.4rem;
     }
 
     .footerContact{
         font-size: 1rem; 
         line-height: 5vh;
+    }
+
+    #headerButton{
+        display: none;
     }
 }
 
@@ -581,6 +593,10 @@ button:focus {
         font-size: 1rem; 
         line-height: 5vh;
     }
+
+    #headerButton{
+        display: none;
+    }
 }
 
 @media (min-width: 1200px){ /* jeżeli szerokość >= 1200 to */
@@ -598,6 +614,10 @@ button:focus {
     .footerContact{
         font-size: 1.2rem; 
         line-height: 200%;
+    }
+
+    #headerButton{
+        display: block;
     }
 }
 
