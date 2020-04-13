@@ -47,8 +47,14 @@ html{
 
     "footer footer footer footer footer"
     "footer footer footer footer footer"
+    "footer footer footer footer footer"
+    "footer footer footer footer footer"
+    "footer footer footer footer footer"
+    "footer footer footer footer footer"
+    "footer footer footer footer footer"
     ;
    
+    font-weight: 500;
 }
 
 .container{
@@ -90,6 +96,7 @@ a:hover{
 .logo a{
     font-size: 20px;
 }
+
 .logo{
 
 }
@@ -185,15 +192,7 @@ a:hover{
     .menu li{
         padding: 15px 10px;
     }
-
-    
-
 }
-
-
-
-
-
 /* https://www.youtube.com/watch?v=6pidsgeLLzE */
 /*----------------NAV ELEMENTS----------------*/
 
@@ -209,7 +208,10 @@ header{
     position: relative;
 
     background: rgb(76,69,78);
-    background: radial-gradient(circle, rgba(76,69,78,1) 0%, rgba(46,51,48,1) 100%);
+    background: radial-gradient(circle, #342f35 0%, #242424 70%);
+
+    background: rgb(171,28,115);
+    background: linear-gradient(150deg, rgba(171,28,115,1) 0%, rgba(87,71,107,1) 20%, rgba(36,36,36,1) 74%, rgba(36,36,36,1) 100%);
 }
     /*--------TITLE--------*/
     #titleContainer{
@@ -269,11 +271,132 @@ section{
     background-color: chocolate;
 }
 
+
+/*----------------FOOTER ELEMENTS----------------*/
 footer{
     grid-area: footer;
-    background-color: #4d433b;
+    background-color: #242424;
+
+    display: flex;
+
+    font-weight: 100;
 }
 
+.footerMenu{
+    width: 100%;
+    padding: 0% 10%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    justify-items: center;
+    align-items: center;
+}
+
+.footerLogo{
+    height: 10%;
+    width: 100%;
+
+    padding-top: 5%;
+}
+
+.footerLogo h1{
+    font-size: 1.6rem;
+}
+
+.footerLogo{
+    align-content: center;
+    justify-content: center;
+}
+
+.footerInfo{
+    padding-top: 5%;
+
+    height: 40%;
+    width: 100%;
+
+    border-top: 0.3vh solid #999; 
+
+    padding-bottom: 10%;
+}
+
+.footerInfo p{
+  font-size: 1.0rem;
+}
+
+.footerInfo h1{
+    color: #bbbbbb;
+    font-size: 1.6rem;
+}
+
+.footerInfo.Kontakt{
+    font-stretch: extra-condensed;
+    line-height: 2.5rem;
+}
+
+.footerInfo.Socialmedia{
+    padding-top: 10%;
+    height: 40%;
+}
+
+.footerInfo.Socialmedia i{
+    font-size: 4rem;
+    font-weight: 100;
+}
+
+/*DESKTOP AND TABLET*/
+@media all and (min-width: 576px){
+    .footerMenu{
+        width: 100%;
+        padding: 0% 10%;
+    
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    
+        align-items: flex-start;
+        
+    
+    }
+    .footerLogo{
+        width: 100%;
+        height: 20%;
+        padding-top: 2%;
+    }
+    .footerLogo h1{
+        font-size: 1.8em;
+    }
+    .footerInfo{
+        width: 50%;
+        height: 50%;
+        padding-top: 2%;
+    }
+
+    .footerInfo p{
+        font-size: 0.75em;
+    }
+    .footerInfo h1{
+        font-size: 1.5em;
+        
+        padding-bottom: 4%;
+    }
+    .footerInfo.Socialmedia{
+        padding-top: 5%;
+        width: 40%;
+        height: 50%;
+        padding-top: 2%;
+    }
+
+    .footerInfo.Socialmedia i{
+        font-size: 7vh;
+    }
+
+}
+
+
+/*----------------FOOTER ELEMENTS----------------*/
 
 
 a{
@@ -314,6 +437,15 @@ button:focus {
         "section section section section section"           
       
         "footer footer footer footer footer"
+        "footer footer footer footer footer"
+        "footer footer footer footer footer"
+        "footer footer footer footer footer"
+        "footer footer footer footer footer"
+        "footer footer footer footer footer"
+        "footer footer footer footer footer"
+        "footer footer footer footer footer"
+        "footer footer footer footer footer"
+        
         ;
 
         
@@ -335,26 +467,95 @@ button:focus {
 /* ----------------------------------------------------------------------------------------------------- */
 
 @media (max-width: 575px){      /* jeżeli szerokość <= 575 to */
+    .navFont{
+        font-size: 1rem;
+    }
+    .footerTitle{
+        font-size: 1.5rem;
+    }
 
+    .footerSubTitle{
+        font-size: 1.4rem;
+    }
+
+    .footerContact{
+        font-size: 1rem; 
+        line-height: 5vh;
+    }
 }
 
 
 @media (min-width: 576px){      /* jeżeli szerokość >= 576 to */
+    .navFont{
+        font-size: 1rem;
+    }
+    .footerTitle{
+        font-size: 2.3rem;
+    }
 
+    .footerSubTitle{
+        font-size: 2rem;
+    }
+
+    .footerContact{
+        font-size: 1rem; 
+        line-height: 5vh;
+    }
 }
 
 @media (min-width: 768px){  /* jeżeli szerokość >= 768 to */
+    .navFont{
+        font-size: 0.7rem;
+    }
+    .footerTitle{
+        font-size: 2rem;
+    }
 
+    .footerSubTitle{
+        font-size: 2rem;
+    }
+
+    .footerContact{
+        font-size: 1rem; 
+        line-height: 5vh;
+    }
 }
 
 @media (min-width: 992px){  /* jeżeli szerokość >= 992 to */
+    .navFont{
+        font-size: 0.9rem;
+    }
+    .footerTitle{
+        font-size: 2.5rem;
+    }
 
+    .footerSubTitle{
+        font-size: 2rem;
+    }
+
+    .footerContact{
+        font-size: 1rem; 
+        line-height: 5vh;
+    }
 }
 
 @media (min-width: 1200px){ /* jeżeli szerokość >= 1200 to */
+    .navFont{
+        font-size: 1.3rem;
+    }
+    .footerTitle{
+        font-size: 4rem;
+    }
 
+    .footerSubTitle{
+        font-size: 3rem;
+    }
+
+    .footerContact{
+        font-size: 1.5rem; 
+        line-height: 200%;
+    }
 }
-
 
 
 @media (orientation: portrait){     /* jeżeli orientacja jest pionowa to */
