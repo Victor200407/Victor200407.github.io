@@ -128,8 +128,8 @@ nav:not(item) a:hover
     text-align: center;
     order: 3;
     display: none;
-    padding: 5% 0px;
 
+    padding: 5% 0px;
     margin-top: 10%;
 }
 
@@ -181,6 +181,11 @@ nav:not(item) a:hover
         order: 2;
     }   
 
+    .item{
+        padding: 0% 0px;
+        margin-top: 0%;
+    }
+
 
 }
 
@@ -191,6 +196,9 @@ nav:not(item) a:hover
     .item{
         display: block;
         width: auto;
+
+        padding: 0% 0px;
+        margin-top: 00%;
     }
     .toggle{
         display: none;
