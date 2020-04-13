@@ -108,7 +108,7 @@ nav:not(item) a:hover
 
 .item:hover{
     border: teal solid 2px;
-    border-radius: 15px;s
+    border-radius: 15px;
 }
 
 
@@ -128,6 +128,9 @@ nav:not(item) a:hover
     text-align: center;
     order: 3;
     display: none;
+    padding: 5% 0px;
+
+    margin-top: 10%;
 }
 
 .item.active{
