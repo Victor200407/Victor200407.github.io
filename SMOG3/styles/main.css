@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: floralwhite;
+    background: #eeeeee;
 }
 
 html{
@@ -37,18 +37,13 @@ html{
     "header header header header header"
     "header header header header header"
     "header header header header header"
-    
-    "main main main main main"
-    "main main main main main"
-    "main main main main main"
-    "main main main main main"
-    "main main main main main"
-    "main main main main main"
 
-    "aside aside aside aside aside"
-    "aside aside aside aside aside"
-    "aside aside aside aside aside"
-    
+    "main main main main aside"
+    "main main main main aside"
+    "main main main main aside"
+    "main main main main aside"
+    "main main main main aside"
+
     "section section section section section" 
     "section section section section section"      
     "section section section section section"   
@@ -81,14 +76,14 @@ html{
     font-size: 25px;
 }
 
-.container > * {
+.container {
     color: whitesmoke;
 }
 
 /*----------------NAV ELEMENTS----------------*/
 nav{
     grid-area: nav;
-    background-color: #242424;
+    background-color: #dbdbdb;
     padding: 5px 20px;
 }
 
@@ -98,6 +93,10 @@ ul{
 
 a{
     color: #eeeeee;
+}
+
+nav a{
+    color: #242424;
     text-decoration: none;
 }
 
@@ -119,14 +118,14 @@ nav:not(item) a:hover
     font-size: 20px;
 }
 
-.item{
+.item a{
     border: rgba(0, 128, 128, 0) solid 2px;
     border-radius: 15px;
 
     transition: all 0.2s ease 0s;
 }
 
-.item:hover{
+.item a:hover{
     border: teal solid 2px;
     border-radius: 15px;
 }
@@ -256,6 +255,7 @@ header{
     background: linear-gradient(150deg, rgba(171,28,115,1) 0%, rgba(87,71,107,1) 20%, rgba(36,36,36,1) 74%, rgba(36,36,36,1) 100%);
 
     background: #2b2b2b;
+    background: #eeeeee;
     
 }
     /*--------TITLE--------*/
@@ -268,6 +268,8 @@ header{
         padding-right: 10%;
 
         font-size: 7rem;
+
+        color: teal;
     }
     /*--------TITLE--------*/
 
@@ -283,39 +285,96 @@ header{
         padding-top: 1%;
         padding-bottom: 1%; 
 
-        color: #eeeeee;
+        color: #a5a5a5;
 
-        border: #eeeeee 0.1vh solid;
+        border: #b6b6b6 0.1vw solid;
         border-radius: 1vw;
 
-        transition: all 0.3s ease 0s;
+    
+        transition: all 0.2s ease 0s;
     }
 
     #headerButton:hover{
-        border: #eeeeee 0.1vw solid;
-        background-color: #eeeeee;
-        color: #4c454e;
+        border-color: transparent;
+        color: #eeeeee;
+        box-shadow: #24242448 0px 0px 20px 3px;
+
+        background-color: teal;
+    }
+
+    #headerButton:active{
+        box-shadow: #24242448 0px 0px 0px 0px;
+        background-color: #dbdbdb;
     }
     /*--------BUTTON--------*/     
 /*----------------HEADER ELEMENTS----------------*/
 
 
+/*----------------ASIDE ELEMENTS----------------*/
 aside{
     grid-area: aside;
-    background-color: burlywood;
+    background: #dbdbdb;
+    color: #9fb9be;
+
+    padding: 2rem;
+    font-size: 1.5rem;
+
+    color: teal;
+}
+/*----------------ASIDE ELEMENTS----------------*/
+
+.topText{
+    font-size: 1.8rem;
 }
 
+/*----------------MAIN ELEMENTS----------------*/
 main{
     grid-area: main;
-    background-color: olivedrab;
+    background: #9fb9be;
+    background: teal;
+
+    padding: 2rem;
 }
+/*----------------MAIN ELEMENTS----------------*/
 
 
+
+/*----------------SECTION ELEMENTS----------------*/
 section{
     grid-area: section;
     background-color: chocolate;
-    background: #9fb9be;
+    background: #eeeeee;
+
+    background: #dbdbdb;
+    background: #e6e6e6;
 }
+
+
+    /*--------BUTTON--------*/     
+    .stickyButton{
+        position: sticky;
+        top: 0;
+
+        border-radius: 0px 0px 10px 10px;
+        width: 10%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 1.5em;
+        background-color: teal;
+        transition: all 0.2s ease 0s;
+        box-shadow: #24242448 0px 0px 20px 3px;
+    }
+
+    .stickyButton:hover{
+        width: 30%;
+    }
+    .stickyButton:active{
+        background-color: #dbdbdb;
+    }
+
+    /*--------BUTTON--------*/     
+/*----------------SECTION ELEMENTS----------------*/
+
 
 
 /*----------------FOOTER ELEMENTS----------------*/
@@ -458,7 +517,6 @@ footer a:hover{
     .footerInfo.Socialmedia i{
         font-size: 7vh;
     }
-
 }
 
 
@@ -552,6 +610,10 @@ button:focus {
     #headerButton{
         display: none;
     }
+
+    .topText{
+        font-size: 1rem;
+    }
 }
 
 
@@ -575,6 +637,10 @@ button:focus {
     #headerButton{
         display: none;
     }
+
+    .topText{
+        font-size: 1.3rem;
+    }
 }
 
 @media (min-width: 768px){  /* jeżeli szerokość >= 768 to */
@@ -596,6 +662,10 @@ button:focus {
 
     #headerButton{
         display: none;
+    }
+
+    .topText{
+        font-size: 1.5rem;
     }
 }
 
@@ -619,6 +689,10 @@ button:focus {
     #headerButton{
         display: none;
     }
+
+    .topText{
+        font-size: 1.7rem;
+    }
 }
 
 @media (min-width: 1200px){ /* jeżeli szerokość >= 1200 to */
@@ -640,6 +714,10 @@ button:focus {
 
     #headerButton{
         display: block;
+    }
+
+    .topText{
+        font-size: 1.8rem;
     }
 }
 
