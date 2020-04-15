@@ -551,10 +551,60 @@ button:focus {
         "header header header header header"
         "header header header header header"
         "header header header header header"
+        
+        "main main main main main"
 
+        "aside aside aside aside aside"
+
+        "section section section section section" 
+        "section section section section section"      
+        "section section section section section"           
+      
+        "footer footer footer footer footer"
+        "footer footer footer footer footer"
+        "footer footer footer footer footer"
+        "footer footer footer footer footer"
+        "footer footer footer footer footer"
+        "footer footer footer footer footer"
+        "footer footer footer footer footer"
+        "footer footer footer footer footer"
+        "footer footer footer footer footer"
+        
+        ;
 
         
-        "main main main aside aside"
+    }
+
+    #titleContainer > h1{
+        font-size: 4rem;
+    }
+
+    #headerButton{
+        display: none;
+    }
+
+}
+
+@media (orientation:portrait) and (max-width: 921px){
+    .container {
+        font-size: 1rem;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-auto-rows: minmax(12,5vh, auto );
+        max-width: 100%;
+        margin: 0 auto;
+    
+        grid-template-areas: 
+
+        "nav nav nav nav nav"
+
+        "header header header header header"
+        "header header header header header"
+        "header header header header header"
+        
+        "main main main main main"
+
+        "aside aside aside aside aside"
 
         "section section section section section" 
         "section section section section section"      
@@ -614,6 +664,10 @@ button:focus {
     .topText{
         font-size: 1rem;
     }
+
+    .stickyButton{
+        opacity: 0;
+    }
 }
 
 
@@ -641,6 +695,10 @@ button:focus {
     .topText{
         font-size: 1.3rem;
     }
+
+    .stickyButton{
+        opacity: 0;
+    }
 }
 
 @media (min-width: 768px){  /* jeżeli szerokość >= 768 to */
@@ -667,6 +725,10 @@ button:focus {
     .topText{
         font-size: 1.5rem;
     }
+
+    .stickyButton{
+        opacity: 0;
+    }
 }
 
 @media (min-width: 992px){  /* jeżeli szerokość >= 992 to */
@@ -691,7 +753,11 @@ button:focus {
     }
 
     .topText{
-        font-size: 1.7rem;
+        font-size: 1.65rem;
+    }
+
+    .stickyButton{
+        opacity: 100;
     }
 }
 
@@ -718,6 +784,10 @@ button:focus {
 
     .topText{
         font-size: 1.8rem;
+    }
+
+    .stickyButton{
+        opacity: 100;
     }
 }
 
