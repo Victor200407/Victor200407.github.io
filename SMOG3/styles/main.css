@@ -288,13 +288,15 @@ header{
         padding-top: 1%;
         padding-bottom: 1%; 
 
-        color: #a5a5a5;
+        color: #ffffff;
 
-        border: #b6b6b6 0.1vw solid;
+        border: black 0.1vw solid;
         border-radius: 1vw;
 
     
         transition: all 0.2s ease 0s;
+
+        background-color: black;  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
     }
 
     #headerButton:hover{
@@ -302,8 +304,11 @@ header{
         color: #eeeeee;
         box-shadow: #24242448 0px 0px 20px 3px;
 
-        background-color: teal; background-color: black; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+        background-color: teal;
+
+        transform: scale(1.05);
     }
+
 
     #headerButton:active{
         box-shadow: #24242448 0px 0px 0px 0px;
@@ -371,6 +376,7 @@ section{
 
     .stickyButton:hover{
         width: 30%;
+        background: teal;
     }
     .stickyButton:active{
         background-color: #dbdbdb;
