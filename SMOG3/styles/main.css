@@ -119,15 +119,17 @@ nav:not(item) a:hover
 }
 
 .item a{
-    border: rgba(0, 128, 128, 0) solid 2px;
+    border: rgba(0, 128, 128, 0) solid 6px;
     border-radius: 15px;
 
     transition: all 0.2s ease 0s;
 }
 
 .item a:hover{
-    border: teal solid 2px;
-    border-radius: 15px;
+    border: teal solid 6px;
+    border-radius: 5px;
+    background-color: teal;
+    color: white;
 }
 
 
@@ -255,6 +257,7 @@ header{
     background: linear-gradient(150deg, rgba(171,28,115,1) 0%, rgba(87,71,107,1) 20%, rgba(36,36,36,1) 74%, rgba(36,36,36,1) 100%);
 
     background: #2b2b2b;
+    
     background: #eeeeee;
     
 }
@@ -269,7 +272,7 @@ header{
 
         font-size: 7rem;
 
-        color: teal;
+        color: teal;   color: black; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
     }
     /*--------TITLE--------*/
 
@@ -299,7 +302,7 @@ header{
         color: #eeeeee;
         box-shadow: #24242448 0px 0px 20px 3px;
 
-        background-color: teal;
+        background-color: teal; background-color: black; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
     }
 
     #headerButton:active{
@@ -319,7 +322,7 @@ aside{
     padding: 2rem;
     font-size: 1.5rem;
 
-    color: teal;
+    color: teal;   color: black; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 }
 /*----------------ASIDE ELEMENTS----------------*/
 
@@ -331,7 +334,7 @@ aside{
 main{
     grid-area: main;
     background: #9fb9be;
-    background: teal;
+    background: teal; background: #111111;  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
     padding: 2rem;
 }
@@ -360,9 +363,10 @@ section{
         margin: 0 auto;
         text-align: center;
         font-size: 1.5em;
-        background-color: teal;
+        background-color: teal; background-color: #1d1d1d; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
         transition: all 0.2s ease 0s;
-        box-shadow: #24242448 0px 0px 20px 3px;
+        box-shadow: #00000048 0px 0px 20px 3px;
     }
 
     .stickyButton:hover{
@@ -519,7 +523,6 @@ footer a:hover{
     }
 }
 
-
 /*----------------FOOTER ELEMENTS----------------*/
 
 
@@ -585,7 +588,7 @@ button:focus {
 
 }
 
-@media (orientation:portrait) and (max-width: 921px){
+@media (orientation:portrait) and (max-width: 921px){   /*______________TEST_____________*/
     .container {
         font-size: 1rem;
         display: grid;
