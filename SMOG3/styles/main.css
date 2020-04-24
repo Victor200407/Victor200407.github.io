@@ -59,6 +59,36 @@ html{
     "section section section section section" 
     "section section section section section"      
     "section section section section section"   
+    "section section section section section" 
+    "section section section section section"      
+    "section section section section section"   
+    "section section section section section" 
+    "section section section section section"      
+    "section section section section section"   
+    "section section section section section" 
+    "section section section section section"      
+    "section section section section section"   
+    "section section section section section" 
+    "section section section section section"      
+    "section section section section section"   
+    "section section section section section" 
+    "section section section section section"      
+    "section section section section section"   
+    "section section section section section" 
+    "section section section section section"      
+    "section section section section section"   
+    "section section section section section" 
+    "section section section section section"      
+    "section section section section section"   
+    "section section section section section" 
+    "section section section section section"      
+    "section section section section section"   
+    "section section section section section" 
+    "section section section section section"      
+    "section section section section section"   
+    "section section section section section" 
+    "section section section section section"      
+    "section section section section section"   
 
     "footer footer footer footer footer"
     "footer footer footer footer footer"
@@ -306,7 +336,7 @@ header{
 
         background-color: teal;
 
-        transform: scale(1.05);
+        /*transform: scale(1.05);*/
     }
 
 
@@ -372,6 +402,8 @@ section{
 
         transition: all 0.2s ease 0s;
         box-shadow: #00000050 0px 0px 20px 3px;
+
+        z-index: 1;
     }
 
     .stickyButton:hover{
@@ -383,6 +415,94 @@ section{
     }
 
     /*--------BUTTON--------*/     
+
+    /*--------INSIDE NAV---------*/
+
+    /*MOBILE*/
+.stickyContainerNav {
+    padding: 3% 0;
+    
+    height: 100vh;
+
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 0;
+    
+
+    width: 100%;/**/
+}
+
+.stickyContainerNav #Menu{
+    color: #1d1d1d;
+    padding: 0;
+    text-align: center;
+    border: none;
+}
+
+.stickyContainerNav #Menu:hover::before{
+    content: none;
+}
+
+.stickyContainerNav ul{
+
+    font-size: 0.8em;
+    line-height: 5.3vh;
+    color: #509292;
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.stickyContainerNav ul li{
+    border-left: #8d8d8d 0.1vw solid;
+    width: 20vw;/**/
+    float: left;
+    padding: 0% 0% 0% 4rem;
+    transition: all 0.2s ease 0s;
+    
+}
+
+.stickyContainerNav ul li:hover{
+    color: black;
+   /* padding: 0px 0% 0% 5rem;*/
+   box-shadow: rgba(46, 46, 46, 0.418) 0px 0px 20px 1px;
+} 
+
+    /*OTHER*/
+    @media all and (min-width: 768px){
+
+    .stickyContainerNav{
+        width: 10%;
+    }
+
+    .stickyContainerNav #Menu{
+        text-align: start;
+    }
+
+    .stickyContainerNav ul li{
+        width: 7vw;
+    }     
+
+    .stickyContainerNav ul li:hover{
+        padding: 0px 0% 0% 5rem;
+        box-shadow: rgba(46, 46, 46, 0.418) 0px 0px 20px 1px;
+    }     
+
+    .stickyContainerNav ul li:hover::before{
+
+        content: "\00BB";
+
+        font-size: 1.13em;
+        content: "\00BB";
+    }
+
+}
+     /*--------INSIDE NAV---------*/
+    
 /*----------------SECTION ELEMENTS----------------*/
 
 
