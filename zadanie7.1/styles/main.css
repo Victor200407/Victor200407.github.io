@@ -620,6 +620,7 @@ footer a:hover{
     .button{
       display: none;
     }
+
 }
 
 
@@ -659,6 +660,8 @@ footer a:hover{
     .button{
         display: none;
       }
+
+ 
 }
 
 @media (min-width: 768px){  /* jeżeli szerokość >= 768 to */
@@ -729,7 +732,7 @@ footer a:hover{
     }
 
     .background{
-        font-size: 8rem;
+        font-size: 7rem;
     }
 }
 
@@ -763,6 +766,14 @@ footer a:hover{
     }
 
     .background{
-        font-size: 10rem;
+        font-size: 9rem;
     }
+}
+
+.button i{
+    font-size: 1.7em;
+}
+
+.item2{
+    background-color: #242424e0;
 }
