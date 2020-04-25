@@ -24,12 +24,14 @@ a{
     padding: 3% 5%;
 
     box-shadow: rgba(61, 61, 61, 0.1) 0px 0px 20px 2px;
+
+    text-align: center;
 }
 
  h1{
-    text-align: center;
     font-size: 5em;
     font-size: 6vw;
+    margin: -1%;
     margin-bottom: 1em;
 }
 
