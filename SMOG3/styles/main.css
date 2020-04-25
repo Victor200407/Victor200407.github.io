@@ -319,22 +319,23 @@ header{
         padding-bottom: 1%; 
 
         color: #ffffff;
+        color: teal;
 
-        border: black 0.1vw solid;
-        border-radius: 1vw;
+        border: transparent 0.1vw solid;
+        border-radius: 0.5vw;
 
     
         transition: all 0.2s ease 0s;
 
-        background-color: black;  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+         /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
     }
 
     #headerButton:hover{
         border-color: transparent;
-        color: #eeeeee;
+
         box-shadow: #24242448 0px 0px 20px 3px;
 
-        background-color: teal;
+        color: black;
 
         /*transform: scale(1.05);*/
     }
@@ -454,64 +455,77 @@ section{
     /*---------TEXT----------*/
 
 
+
+
     /*--------INSIDE NAV---------*/
 
     /*MOBILE*/
-.stickyContainerNav {
-    padding: 3% 0;
-    
-    float: left;
+    .stickyContainerNav {
+        padding: 3% 0;
+        
+        float: left;
 
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    z-index: 0;
-    
-    height: 20vh;/**/
-    width: 100%;/**/
-}
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+        z-index: 0;
+        
+        height: 20vh;/**/
+        width: 100%;/**/
+    }
 
-.stickyContainerNav #Menu{
-    color: #1d1d1d;
-    padding: 0;
-    text-align: center;
-    border: none;
-}
+    .stickyContainerNav #Menu{
+        color: #1d1d1d;
+        padding: 0;
+        text-align: center;
+        border: none;
+    }
 
-.stickyContainerNav #Menu:hover::before{
-    content: none;
-}
+    .stickyContainerNav #Menu:hover::before{
+        content: none;
+    }
 
-.stickyContainerNav ul{
+    .stickyContainerNav ul{
 
-    font-size: 0.8em;
-    line-height: 5.3vh;
-    color: #509292;
-    display: flex;
-    flex-wrap: wrap;
+        font-size: 0.8em;
+        line-height: 5.3vh;
+        color: #509292;
+        display: flex;
+        flex-wrap: wrap;
 
-    justify-content: center;
-    align-items: center;
+        justify-content: center;
+        align-items: center;
 
-}
+    }
 
-.stickyContainerNav ul li{
-    border-left: #8d8d8d 0.1vw solid;
-    width: 20vw;/**/
-    float: left;
-    padding: 0% 0% 0% 4rem;
-    transition: all 0.2s ease 0s;
-    
-}
+    .stickyContainerNav ul li{
+        border-left: #8d8d8d 0.1vw solid;
+        width: 20vw;/**/
+        float: left;
+        padding: 0% 20px 0% 2rem;
+        transition: all 0.2s ease 0s;
+        
+        text-align: center;
+    }
 
-.stickyContainerNav ul li:hover{
-    color: black;
-   /* padding: 0px 0% 0% 5rem;*/
-   box-shadow: rgba(46, 46, 46, 0.418) 0px 0px 20px 1px;
-} 
+    .stickyContainerNav ul li:hover{
+        color: black;
+        /* padding: 0px 0% 0% 5rem;*/
+        box-shadow: rgba(46, 46, 46, 0.418) 0px 0px 20px 1px;
+    } 
+
+    .stickyContainerNav ul li:active{
+        transition: 0s;
+        transform: rotateY(15deg);
+    }
+
+    .stickyContainerNav a{
+        color:  rgb(81, 155, 155);
+        height: ;
+    }
 
     /*OTHER*/
-    @media all and (min-width: 768px){
+    @media all and (min-width: 922px){
 
     .stickyContainerNav{
         width: 10%;
@@ -527,7 +541,7 @@ section{
     }     
 
     .stickyContainerNav ul li:hover{
-        padding: 0px 0% 0% 5rem;
+        padding: 0px 0% 0% 3rem;
         box-shadow: rgba(46, 46, 46, 0.418) 0px 0px 20px 1px;
         box-shadow: none;
     }     
@@ -539,9 +553,13 @@ section{
         font-size: 1.13em;
         content: "\00BB";
     }
-
 }
      /*--------INSIDE NAV---------*/
+
+     article{
+         padding-top: 2em;
+         margin-bottom: 10em;
+     }
     
 /*----------------SECTION ELEMENTS----------------*/
 
@@ -692,7 +710,7 @@ footer a:hover{
 /*----------------FOOTER ELEMENTS----------------*/
 
 
-a{
+footer a{
     text-decoration: none;
 }
 
