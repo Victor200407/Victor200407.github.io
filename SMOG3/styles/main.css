@@ -319,6 +319,8 @@ header{
 
         font-size: 7rem;
 
+        font-size: 6vw;
+
         color: teal;   color: black; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
     }
     /*--------TITLE--------*/
@@ -839,7 +841,7 @@ button:focus {
         
     }
 
-    #titleContainer > h1{
+    #titleContainer h1{
         font-size: 4rem;
     }
 
@@ -881,6 +883,10 @@ button:focus {
 
     .stickyButton{
         opacity: 0;
+    }
+
+    #titleContainer h1{
+        font-size: 11vw;
     }
 }
 
