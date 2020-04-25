@@ -421,6 +421,7 @@ section{
     /*MOBILE*/
     .sectionContainer{
         height: 100%;
+    
     }
 
     .sectionContainerText{
@@ -450,6 +451,9 @@ section{
         .sectionContainerText{
             width: 90%;
         }
+        .sectionContainer{
+            display: inline;
+        }
 
     }        
     /*---------TEXT----------*/
@@ -467,6 +471,9 @@ section{
 
         position: sticky;
         position: -webkit-sticky;
+        position: -moz-sticky;
+        position: -ms-sticky;
+        position: -o-sticky;
         top: 0;
         z-index: 0;
         
@@ -976,6 +983,8 @@ button:focus {
     .stickyButton{
         opacity: 100;
     }
+
+    
 }
 
 
