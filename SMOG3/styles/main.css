@@ -441,9 +441,13 @@ section{
 
     .sectionContainerTextImg{
         margin-top: 3em;
-        background-color: blue;
+        /*background-color: blue;*/
         min-height: 50vh;
-        overflow: hidden;
+        overflow: visible;
+    }
+
+    .sectionContainerTextImg img{
+        width: 100%;
     }
 
     /*OTHER*/
