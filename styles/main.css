@@ -1,0 +1,309 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+::-webkit-scrollbar{
+    width: 0.4vw;
+}
+::-webkit-scrollbar-thumb{
+    background-color:#2b2b2b2d;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color:#858585;
+}
+::-webkit-scrollbar-track{
+    background-color:#dddddd;
+    background: linear-gradient(142deg, rgba(28,171,143,1) 0%, rgba(114,153,149,1) 20%, rgba(198,196,196,1) 74%);
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*-------TITLE--------*/
+
+    /*DESKTOP*/
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: #141414;
+
+    
+}
+
+.titleContainer{
+    width: 100%;
+    height: 75%;
+    padding: 5% 10%;
+
+    font-size: 1vw;
+}
+
+.titleBox{
+    height: 100%;
+
+    width: 100%;
+
+    padding: 10% 0;
+
+
+
+    animation-name: example;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+
+    overflow: hidden;
+
+    color: whitesmoke;
+}
+
+
+
+@keyframes example {
+    0% {width: 0%; opacity: 0;}
+    55% {opacity: 0;}
+    100% {width: 100%;}
+  }
+
+
+
+.title{
+    width: 100%;
+    border-bottom: 4px solid #dd8367;
+    text-align: center;
+    
+    font-size: 5em;
+
+    padding: 1%;
+
+    color: #e2bbb0;
+    
+}  
+
+.subTitle{
+    text-align: center;
+    height: 40%;
+
+    animation-name: subTitle;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+
+   
+
+    position: relative;  
+
+
+    overflow: hidden;
+}
+
+.subTitleText{
+    position: absolute;
+    top: 0;
+
+
+    width: 100%;
+    height: 100%;
+
+    padding-top: 1%;
+    font-size: 2em;
+
+    margin-top: 0px;
+
+    animation-name: subTitle;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+}
+
+@keyframes subTitle {
+    0%{margin-top: -20%;}
+    100%{margin-top: 0%;}
+}
+
+
+
+
+  .buttonContainer{
+    width: 7vw;
+    margin-left: 36.9vw;
+    height: 7vw;
+
+    overflow: hidden;
+    border-radius: 200%;
+  }
+
+.button{
+    width: 7vw;
+    height: 7vw;
+    background-color: transparent;
+    border-radius: 200%;
+
+    border: tomato 0.2vw solid;
+    color: tomato;
+
+    animation-name: example2;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.2s ease-in 0s;
+}  
+
+
+@keyframes example2 {
+    0% {opacity: 0;transform: scale(5.5);}
+    25% {opacity: 0;}
+    100% {width: 100%;}
+  }
+ 
+  
+.button:hover{
+    border: brown 3vw solid;
+    background-color: brown;
+}  
+
+.button:active{
+    transition: 10ms;
+    border: rgba(177, 68, 68, 0.726) 4.2vw solid;
+}
+
+
+    /*MOBILE*/
+    @media(max-width: 991px){
+        .button{
+            display: none;
+        }
+        .titleBox{
+            font-size: 1em;
+        }
+        .subTitle{
+            font-size: 4em;
+        }
+
+        .container{
+            height: 25em;
+
+            border-bottom: solid 1px rgb(109, 109, 109);
+        }
+        .subTitle{
+            height: 240%;
+        }
+        .titleContainer{
+            height: 100%;
+            
+        }
+    }
+
+/*-------TITLE--------*/
+
+
+
+
+
+
+
+
+
+/*-------CONTENT--------*/
+  
+    /*DESKTOP*/
+
+.textContainer{
+    min-height: 100vh;
+    background-color: #141414;
+    color: #dddddd;
+    padding: 5% 15%;
+}
+
+.textBox{
+    height: 100%;
+}
+
+.column {
+    width: 50%;
+    height: 80vh;
+
+   
+    margin: 5vh 0px;
+    margin-top: 10vh;
+    margin-left: 25%;
+
+}
+
+.column a{
+    text-decoration: none;
+    color: #dddddd;
+    font-variant: small-caps;
+    font-size: 2em;
+}
+
+
+.column h1{
+    padding: 4%;
+    text-align: center;
+    font-size: 6em;
+    font-variant: small-caps;
+}
+
+.column ul{
+    list-style: none;
+}
+
+.column li{
+    padding: 2%;
+    border-left: 0.1em solid #dd8367;
+    border-right: 0.1em solid #dd8367;
+    text-align: center;
+    transition: all 0.3s ease 0s;
+}
+
+.column li:hover{
+    background-color: #dddddd18;
+}
+
+.column div{
+    margin: 20px 0px;
+    width: 100%;
+    height: 10vh;
+    float: left;
+    padding: 1% 0 0 2%;
+    font-size: 2em;
+    font-variant: small-caps;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column div:hover{
+    transition: all 0.4s ease 0s;
+    height: 15vh;
+    margin: 1% 0;
+    background-color: #dd8367;
+    width: 100%;
+    border-radius: 0.2em;
+}
+
+
+
+
+    /*MOBILE*/
+    @media(max-width: 991px){
+        .textContainer{
+            
+        }
+    }
