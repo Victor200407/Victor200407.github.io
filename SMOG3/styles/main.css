@@ -434,8 +434,8 @@ section{
     .stickyButton:active{
         background-color: #dbdbdb;
     }
+        /*--------BUTTON--------*/     
 
-    /*--------BUTTON--------*/     
 
     /*---------TEXT----------*/
     /*MOBILE*/
@@ -462,7 +462,8 @@ section{
     .sectionContainerTextImg{
         margin-top: 3em;
         /*background-color: blue;*/
-        min-height: 50vh;
+        min-height: 20vh;
+        max-height: 150vh;
         overflow: visible;
     }
 
@@ -471,12 +472,141 @@ section{
     }
 
     /*OTHER*/
-    @media all and (min-width: 768px){
+    @media all and (min-width: 922px){
         .sectionContainerText{
             width: 90%;
         }
         .sectionContainer{
             display: inline;
+        }
+
+        .sectionContainerTextImg{
+            position: relative;
+            overflow: hidden;
+        }
+
+        /*-------CONTENT BUTTON---------*/
+
+        .sectionContainerTextImgButton{
+            position: absolute;
+            bottom: 25%;
+            right: 20.5%;
+            border-radius: 1em;
+            width: 15%;
+            height: 5vw;
+            overflow: hidden;
+            background-color: transparent;
+            transition: all 0.3s ease 0s;
+            color: #5a7474;
+            color: #b9b9b9;
+            padding-top: 2%;
+            text-align: center;
+        }
+
+        /*POSITION*/
+        .R{ /*RIGHT*/
+            right: 20.5%;
+        }
+
+        .B{ /*BOTTOM*/
+            bottom: 25%;
+        }
+
+        .L{ /*LEFT*/
+            left: 20.5%;
+        }
+
+        .T{ /*TOP*/
+            top: 25%;
+        }
+
+        /*COLORS*/
+        .blackColor{
+            color: rgb(46, 46, 46);
+        }
+        .whiteColor{
+            color: floralwhite;
+        }
+        
+
+        .sectionContainerTextImgButton p{
+            padding-top: 30%;
+        }
+
+        .sectionContainerTextImgButton h3{
+            font-weight: lighter;
+        }
+
+
+        /*---HOVER---*/
+
+        .sectionContainerTextImgButton:hover{
+            animation-name: example;
+            animation-duration: 0.76s;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes example {
+            0% {transform: rotate(0deg);}
+            6.3% {transform: rotate(0.8deg);}
+            14.6% {transform: rotate(-0.8deg);}
+            21.9% {transform: rotate(1.4deg);}
+            31.1% {transform: rotate(-1.4deg);}
+            39.4% {transform: rotate(1.8deg);}
+            46.7% {transform: rotate(-1.8deg);}
+            55% {transform: rotate(1.1deg);}
+            62.3% {transform: rotate(-1.1deg);}
+            69.6% {transform: rotate(0.7deg);}
+            76.9% {transform: rotate(-0.7deg);}
+            79% {transform: rotate(0.4deg);}
+            83% {transform: rotate(-0.4deg);}
+            87% {transform: rotate(0.2deg);}
+            91% {transform: rotate(-0.2deg);}
+            94% {transform: rotate(0.1deg);}
+            97% {transform: rotate(-0.1deg);}
+          }
+
+
+          
+        .sectionContainerTextImgButton:hover{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            border-radius: 0%;
+            width: 40% ;
+            height: 100% ;
+            background-color: rgb(206, 206, 206);
+            color: transparent;
+        }
+
+        .R:hover{
+            right: 0;
+        }
+
+        .B:hover{
+            bottom: 0;
+        }
+
+        .L:hover{
+            left: 0;
+        }
+
+        .T:hover{
+            top: 0;
+        }
+
+        .sectionContainerTextImgButton div{
+            position: absolute;
+            top: 10vh;
+            width: 100%;
+            padding: 10% 10%;
+            line-height: 2em;
+            color: #5a7474;
+        }
+        /*-------CONTENT BUTTON---------*/
+
+        .sectionContainer .hidden{
+           display: none;  /*---W_OSTATECZNOŚCI---*/
         }
 
     }        
@@ -493,12 +623,13 @@ section{
         
         float: left;
 
-        position: sticky;
+       /* position: sticky;
         position: -webkit-sticky;
         position: -moz-sticky;
         position: -ms-sticky;
         position: -o-sticky;
-        top: 0;
+        top: 0;*/
+        position: static;
         z-index: 0;
         
         height: 20vh;/**/
@@ -560,7 +691,16 @@ section{
     .stickyContainerNav{
         width: 10%;
         height: 100vh;
+
+        position: sticky;
+        position: -webkit-sticky;
+        position: -moz-sticky;
+        position: -ms-sticky;
+        position: -o-sticky;
+        top: 0;
     }
+
+   
 
     .stickyContainerNav #Menu{
         text-align: start;
