@@ -474,6 +474,12 @@ section{
 
     /*OTHER*/
     @media all and (min-width: 922px){
+
+        article{
+            padding-top: 2em;
+            margin-bottom: 10em;
+        }
+
         .sectionContainerText{
             width: 90%;
         }
@@ -731,10 +737,7 @@ section{
 }
      /*--------INSIDE NAV---------*/
 
-     article{
-         padding-top: 2em;
-         margin-bottom: 10em;
-     }
+     
     
 /*----------------SECTION ELEMENTS----------------*/
 
