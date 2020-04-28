@@ -400,10 +400,6 @@ main{
 /*----------------SECTION ELEMENTS----------------*/
 section{
     grid-area: section;
-    background-color: chocolate;
-    background: #eeeeee;
-
-    background: #dbdbdb;
     background: #e6e6e6;
 }
 
@@ -471,6 +467,11 @@ section{
         width: 100%;
     }
 
+    .sectionContainerTextImg h3{
+        display: none;
+    }
+
+
     /*OTHER*/
     @media all and (min-width: 922px){
         .sectionContainerText{
@@ -483,6 +484,10 @@ section{
         .sectionContainerTextImg{
             position: relative;
             overflow: hidden;
+        }
+
+        .sectionContainerTextImgButton h3{
+            color: black;
         }
 
         /*-------CONTENT BUTTON---------*/
