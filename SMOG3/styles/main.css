@@ -467,7 +467,7 @@ section{
         width: 100%;
     }
 
-    .sectionContainerTextImg h3{
+    .sectionContainerTextImgButton *{
         display: none;
     }
 
@@ -486,8 +486,8 @@ section{
             overflow: hidden;
         }
 
-        .sectionContainerTextImgButton h3{
-            display: inline;
+        .sectionContainerTextImgButton *{
+            display: inherit;
         }
 
         /*-------CONTENT BUTTON---------*/
