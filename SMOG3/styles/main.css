@@ -130,7 +130,7 @@ html{
 /*----------------NAV ELEMENTS----------------*/
 nav{
     grid-area: nav;
-    background-color: #dbdbdb;
+    background-color: #e6e6e6;
     padding: 5px 20px;
 }
 
@@ -296,19 +296,27 @@ header{
 
     text-align: center;
     position: relative;
-
-    background: rgb(76,69,78);
-    background: radial-gradient(circle, #342f35 0%, #242424 70%);
-
-    background: rgb(171,28,115);
-    background: linear-gradient(150deg, rgba(171,28,115,1) 0%, rgba(87,71,107,1) 20%, rgba(36,36,36,1) 74%, rgba(36,36,36,1) 100%);
-
-    background: #2b2b2b;
     
-    background: #eeeeee;
-    
-    
+    overflow: hidden;
+
+    background-image: url('../img/bkgrnd.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
+    
+
+video{
+    position: absolute;
+    top: -5%;
+    left: -5%;
+    width: auto;
+    height: 130vh;
+    z-index: 0;
+}
+
+
+
     /*--------TITLE--------*/
     #titleContainer{
         background-color: rgba(255, 99, 71, 0); /*WIP*/
@@ -320,13 +328,19 @@ header{
 
         font-size: 6vw;
 
-        color: teal;   color: black; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+        color: teal;   color: rgb(255, 255, 255); /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
         display: flex;
         justify-content: center;
         align-items: center;
+
+        position: absolute;
+        width: 100%;
+        
+        z-index: 5;
+        
     }
-    #titleContainer h1{
+    #titleContainer > h1{
         font-weight: bolder;
     }
     /*--------TITLE--------*/
@@ -344,13 +358,13 @@ header{
         padding-bottom: 1%; 
 
         color: #ffffff;
-        color: #5a7474;
+        color: #ffffff;
 
         border: transparent 0.1vw solid;
         border-radius: 0.5vw;
 
     
-        transition: all 0.2s ease 0s;
+        transition: all 0.3s ease 0s;
 
          /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
     }
@@ -361,9 +375,12 @@ header{
         box-shadow: #24242448 0px 0px 20px 3px;
 
         color: black;
+        color: #ffffff;
 
-        /*transform: scale(1.05);*/
+        background-color: #ffffff15;
+
     }
+
 
 
     #headerButton:active{
@@ -371,6 +388,14 @@ header{
         background-color: #dbdbdb;
     }
     /*--------BUTTON--------*/     
+
+
+    @media(max-width:921px){
+    video{
+        opacity: 0;
+    }
+}
+
 /*----------------HEADER ELEMENTS----------------*/
 
 
@@ -479,7 +504,7 @@ section{
 
 
     /*OTHER*/
-    @media all and (min-width: 922px){
+    @media all and (min-width: 1500px){
 
         article{
             padding-top: 2em;
@@ -710,7 +735,7 @@ section{
     }
 
     /*OTHER*/
-    @media all and (min-width: 922px){
+    @media all and (min-width: 1500px){
 
     .stickyContainerNav{
         width: 10%;
