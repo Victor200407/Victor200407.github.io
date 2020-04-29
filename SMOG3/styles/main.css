@@ -307,6 +307,7 @@ header{
     
     background: #eeeeee;
     
+    
 }
     /*--------TITLE--------*/
     #titleContainer{
@@ -314,14 +315,19 @@ header{
 
         margin-top: 10%;
 
-        padding-left: 10%;
-        padding-right: 10%;
 
         font-size: 7rem;
 
         font-size: 6vw;
 
         color: teal;   color: black; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #titleContainer h1{
+        font-weight: bolder;
     }
     /*--------TITLE--------*/
 
@@ -508,7 +514,6 @@ section{
             overflow: hidden;
             background-color: transparent;
             transition: all 0.3s ease 0s;
-            color: #5a7474;
             color: #b9b9b9;
             padding-top: 2%;
             text-align: center;
@@ -613,6 +618,14 @@ section{
             padding: 10% 10%;
             line-height: 2em;
             color: #5a7474;
+        }
+
+        .T div{
+            padding: 0% 10%;
+        }
+
+        .B div{
+            padding: 20% 10%;
         }
         /*-------CONTENT BUTTON---------*/
 
@@ -1159,8 +1172,13 @@ button:focus {
         opacity: 100;
     }
 
-    
+    #titleContainer h1{
+        font-size: 11vw;
+        letter-spacing: -0.03em;
+    }
 }
+    
+
 
 
 @media (orientation: portrait){     /* jeżeli orientacja jest pionowa to */
