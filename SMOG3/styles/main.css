@@ -955,6 +955,7 @@ button:focus {
         "header header header header header"
         "header header header header header"
         
+        
         "main main main main main"
 
         "aside aside aside aside aside"
@@ -1004,6 +1005,8 @@ button:focus {
         "header header header header header"
         "header header header header header"
         "header header header header header"
+        "header header header header header"
+
         
         "main main main main main"
 
@@ -1026,6 +1029,10 @@ button:focus {
         ;
 
         
+    }
+
+    header{
+        padding-top: 7%;
     }
 
     #titleContainer h1{
