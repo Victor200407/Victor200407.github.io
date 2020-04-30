@@ -6,6 +6,16 @@
 
 body{
     background: #eeeeee;
+    opacity: 1;
+    animation-name: intoAnim;
+    animation-duration: 2s;
+    animation-direction: reverse;
+    animation-timing-function: ease;
+}
+
+@keyframes intoAnim{
+    0%{opacity: 1;}
+    100%{opacity: 0;}
 }
 
 ::-webkit-scrollbar
