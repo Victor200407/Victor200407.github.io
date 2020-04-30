@@ -6,6 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main.css" type="text/css">
 
+
+    <!--AOS-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <script src="../dist/aos.js"></script>
+        <script>
+        AOS.init({
+            easing: 'ease-in-out-sine'
+        });
+        </script>
+    <!--AOS-->
+
+
     <link href='https://fonts.googleapis.com/css?family=Sen' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Abril Fatface' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
@@ -40,7 +56,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
-
         $(function() {
             
             $(".toggle").on("click", function(){
@@ -57,8 +72,9 @@
             })
 
         });
-
     </script>
+    <!--NAV-->
+
 
 </head>
 <body onload="odliczanie();">
@@ -159,21 +175,22 @@
 
                 <div class="sectionContainerText">
 
-                    <article id="sectionArticle1">
+                    <article id="sectionArticle1" data-aos="fade-down">
                         <p>I</p>
                         <h1>sectionContainer</h1>
                         <p class="hidden">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus officia a est, nesciunt sint, velit at possimus veniam non recusandae quod vel iure laboriosam, quisquam sapiente amet numquam magnam voluptate.</p>
                         <div class="sectionContainerTextImg">
-                            <img src="img/1.jpeg" alt="">
+                            <img src="img/1.jpeg" alt="" >
 
                             <div class="sectionContainerTextImgButton R B"><h3>Hover Me</h3>
                                 <div><p><h1>Lorem</h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A voluptatum ex sequi! Consequuntur nulla odio iure voluptatem ut consectetur excepturi voluptate consequatur et pariatur, velit fugiat ipsa cumque, assumenda cupiditate!</p></div>
                             </div>
 
                         </div>
+
                     </article>
 
-                    <article id="sectionArticle2">
+                    <article id="sectionArticle2" data-aos="fade-right">
                         <p>II</p>
                         <h1>sectionContainer</h1>
                         <p class="hidden">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus officia a est, nesciunt sint, velit at possimus veniam non recusandae quod vel iure laboriosam, quisquam sapiente amet numquam magnam voluptate.</p>
@@ -187,7 +204,7 @@
                         </div>
                     </article>
 
-                    <article id="sectionArticle3">
+                    <article id="sectionArticle3" data-aos="fade-left">
                         <p>III</p>
                         <h1>sectionContainer</h1>
                         <p class="hidden">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus officia a est, nesciunt sint, velit at possimus veniam non recusandae quod vel iure laboriosam, quisquam sapiente amet numquam magnam voluptate.</p>
@@ -201,38 +218,38 @@
                         
                     </article>
 
-                    <article id="sectionArticle4">
+                    <article id="sectionArticle4" data-aos="fade-right">
                         <p>IV</p>
                         <h1>sectionContainer</h1>
                         <p class="hidden">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus officia a est, nesciunt sint, velit at possimus veniam non recusandae quod vel iure laboriosam, quisquam sapiente amet numquam magnam voluptate.</p>
-                        <div class="sectionContainerTextImg">
+                        <div class="sectionContainerTextImg"> 
                             <img src="img/8.jpg" alt="">
 
-                            <div class="sectionContainerTextImgButton L T"><h3>Hover Me</h3>
+                            <div class="sectionContainerTextImgButton L T whiteColor"><h3>Hover Me</h3>
                                 <div><p><h1>Lorem</h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A voluptatum ex sequi! Consequuntur nulla odio iure voluptatem ut consectetur excepturi voluptate consequatur et pariatur, velit fugiat ipsa cumque, assumenda cupiditate!</p></div>
                             </div>  
                         </div>
                     </article>
 
-                    <article id="sectionArticle5">
+                    <article id="sectionArticle5" data-aos="fade-left">
                         <p>V</p>
                         <h1>sectionContainer</h1>
                         <p class="hidden">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus officia a est, nesciunt sint, velit at possimus veniam non recusandae quod vel iure laboriosam, quisquam sapiente amet numquam magnam voluptate.</p>
                         <div class="sectionContainerTextImg">
                             <img src="img/9.jpg" alt="">
 
-                            <div class="sectionContainerTextImgButton R T"><h3>Hover Me</h3>
+                            <div class="sectionContainerTextImgButton R T whiteColor"><h3>Hover Me</h3>
                                 <div><p><h1>Lorem</h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A voluptatum ex sequi! Consequuntur nulla odio iure voluptatem ut consectetur excepturi voluptate consequatur et pariatur, velit fugiat ipsa cumque, assumenda cupiditate!</p></div>
                             </div>  
                         </div>
                     </article>
 
-                    <article id="sectionArticle6">
+                    <article id="sectionArticle6" data-aos="fade-right">
                         <p>VI</p>
                         <h1>sectionContainer</h1>
                         <p class="hidden">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus officia a est, nesciunt sint, velit at possimus veniam non recusandae quod vel iure laboriosam, quisquam sapiente amet numquam magnam voluptate.</p>
                         <div class="sectionContainerTextImg">
-                            <img src="img/Schody.jpg" alt="Alt">
+                            <img src="img/schody.jpg" alt="Alt">
 
                             <div class="sectionContainerTextImgButton R B whiteColor"><h3>Hover Me</h3>
                                 <div><p><h1>Lorem</h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A voluptatum ex sequi! Consequuntur nulla odio iure voluptatem ut consectetur excepturi voluptate consequatur et pariatur, velit fugiat ipsa cumque, assumenda cupiditate!</p></div>
@@ -240,7 +257,7 @@
                         </div>
                     </article>
 
-                    <article id="sectionArticle7">
+                    <article id="sectionArticle7" data-aos="fade-left">
                         <p>VII</p>
                         <h1>sectionContainer</h1>
                         <p class="hidden">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus officia a est, nesciunt sint, velit at possimus veniam non recusandae quod vel iure laboriosam, quisquam sapiente amet numquam magnam voluptate.</p>
@@ -249,7 +266,7 @@
                         </div>
                     </article>
 
-                    <article id="sectionArticle8">
+                    <article id="sectionArticle8" data-aos="fade-right">
                         <p>VIII</p>
                         <h1>sectionContainer</h1>
                         <p class="hidden">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus officia a est, nesciunt sint, velit at possimus veniam non recusandae quod vel iure laboriosam, quisquam sapiente amet numquam magnam voluptate.</p>
@@ -258,7 +275,7 @@
                         </div>
                     </article>
 
-                    <article id="sectionArticle9">
+                    <article id="sectionArticle9" data-aos="fade-left">
                         <p>IX</p>
                         <h1>sectionContainer</h1>
                         <p class="hidden">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus officia a est, nesciunt sint, velit at possimus veniam non recusandae quod vel iure laboriosam, quisquam sapiente amet numquam magnam voluptate.</p>
@@ -267,7 +284,7 @@
                         </div>
                     </article>
 
-                    <article id="sectionArticle10">
+                    <article id="sectionArticle10" data-aos="fade-right">
                         <p>X</p>
                         <h1>sectionContainer</h1>
                         <p class="hidden">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus officia a est, nesciunt sint, velit at possimus veniam non recusandae quod vel iure laboriosam, quisquam sapiente amet numquam magnam voluptate.</p>
@@ -276,7 +293,7 @@
                         </div>
                     </article>
                     
-                    <article id="sectionArticle11">
+                    <article id="sectionArticle11" data-aos="fade-left">
                         <p>XI</p>
                         <h1>sectionContainer</h1>
                         <p class="hidden">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus officia a est, nesciunt sint, velit at possimus veniam non recusandae quod vel iure laboriosam, quisquam sapiente amet numquam magnam voluptate.</p>
@@ -285,7 +302,7 @@
                         </div>
                     </article>
 
-                    <article id="sectionArticle12">
+                    <article id="sectionArticle12" data-aos="fade-right">
                         <p>XII</p>
                         <h1>sectionContainer</h1>
                         <p class="hidden">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus officia a est, nesciunt sint, velit at possimus veniam non recusandae quod vel iure laboriosam, quisquam sapiente amet numquam magnam voluptate.</p>
@@ -336,5 +353,26 @@
             </ul>
         </footer>
     </div>
+
+    <!--AOS-->
+        <script>
+            AOS.init({
+            easing: 'ease-in-out-sine'
+            });
+        </script>
+    
+        <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.11/require.min.js"></script>
+        <script>
+            requirejs.config({
+                baseUrl: '../dist',
+            });
+    
+            require(['aos'], function(AOS){
+                AOS.init({
+                    easing: 'ease-in-out-sine'
+                });
+            });
+        </script> -->
+      <!--AOS-->
 </body>
 </html>
