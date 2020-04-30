@@ -468,7 +468,7 @@ section{
     /*MOBILE*/
     .sectionContainer{
         height: 100%;
-    
+        overflow: hidden;
     }
 
     .sectionContainerText{
