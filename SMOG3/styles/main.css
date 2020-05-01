@@ -5,7 +5,7 @@
 }
 
 body{
-    background: #eeeeee;
+    background: #e6e6e6;
     opacity: 1;
 
 }
@@ -121,6 +121,8 @@ html{
     ;
    
     font-weight: 500;
+
+
 }
 
 .container{
@@ -343,6 +345,7 @@ video{
         
         z-index: 5;
         
+        
     }
     #titleContainer > h1{
         font-weight: bolder;
@@ -436,6 +439,8 @@ main{
 section{
     grid-area: section;
     background: #e6e6e6;
+
+    
 }
 
 
@@ -495,7 +500,9 @@ section{
         /*background-color: blue;*/
         min-height: 20vh;
         max-height: 150vh;
-        overflow: visible;
+        overflow: hidden;
+        padding-top: 2em;
+            margin-bottom: 10em;
     }
 
     .sectionContainerTextImg img{
@@ -508,7 +515,7 @@ section{
 
 
     /*OTHER*/
-    @media all and (min-width: 1500px){
+    @media all and (min-width: 1350px){
 
         article{
             padding-top: 2em;
@@ -739,7 +746,7 @@ section{
     }
 
     /*OTHER*/
-    @media all and (min-width: 1500px){
+    @media all and (min-width: 1350px){
 
     .stickyContainerNav{
         width: 10%;
@@ -779,7 +786,7 @@ section{
 }
      /*--------INSIDE NAV---------*/
 
-     img{
+     /*img{
          animation-name: tlo;
          animation-duration: 10s;
          animation-iteration-count: infinite;
@@ -790,7 +797,7 @@ section{
         0%{transform: scale(1); }
         50%{transform: scale(1.02);}
         100%{transform: scale(1);}
-     }
+     }*/
      
     
 /*----------------SECTION ELEMENTS----------------*/
@@ -805,6 +812,7 @@ footer{
     display: flex;
 
     font-weight: 100;
+    margin-top: 10em;
 }
 
 .footerMenu{
