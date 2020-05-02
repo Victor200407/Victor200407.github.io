@@ -344,11 +344,11 @@ video{
         width: 100%;
         
         z-index: 5;
-        
-        
+
     }
     #titleContainer > h1{
         font-weight: bolder;
+        letter-spacing: -0.059em;
     }
     /*--------TITLE--------*/
 
@@ -439,8 +439,11 @@ main{
 section{
     grid-area: section;
     background: #e6e6e6;
+}
 
-    
+article p:first-of-type {
+    font-size: .9em;
+    text-indent: 0.2em;
 }
 
 
@@ -501,8 +504,9 @@ section{
         min-height: 20vh;
         max-height: 150vh;
         overflow: hidden;
-        padding-top: 2em;
+        margin-top: 2em;
             margin-bottom: 10em;
+        position: relative;
     }
 
     .sectionContainerTextImg img{
@@ -1231,6 +1235,7 @@ button:focus {
     #titleContainer h1{
         font-size: 11vw;
         letter-spacing: -0.03em;
+        letter-spacing: -0.059em;
     }
 }
     
