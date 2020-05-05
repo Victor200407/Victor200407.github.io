@@ -446,6 +446,14 @@ article p:first-of-type {
     text-indent: 0.2em;
 }
 
+article h1::after{
+    width: 9%;
+    height: 0.2em;
+    background-color: #242424a6;
+    content: "";
+    display: block;
+}
+
 
     /*--------BUTTON--------*/     
     .stickyButton{
