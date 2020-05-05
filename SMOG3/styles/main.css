@@ -1118,6 +1118,8 @@ button:focus {
     #titleContainer h1{
         font-size: 11vw;
     }
+
+    
 }
 
 
@@ -1148,6 +1150,10 @@ button:focus {
 
     .stickyButton{
         opacity: 0;
+    }
+
+    .TextOnHover{
+        font-size: 2.6vh;   /*TEXT ON HOVER*/   /*WIP*/ /*-----------------------------------------------------------------------------------------------------------------------------------------------------*/
     }
 }
 
