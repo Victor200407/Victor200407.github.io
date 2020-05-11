@@ -55,7 +55,6 @@ body{
 
 /*=====---\/---==HEADER==---\/---=====*/
 
-
 /* 
     !MOBILE
 */
@@ -66,32 +65,123 @@ body{
                 top: 0;
                 right: 0;
                 width: 100%;
-
-                height: 7vh;
-
-                padding: 0% 5%;
+                height: 90vh;
                 display: flex;
-                align-content: center;
-                justify-content: space-between;
-
+            //    align-content: center;
+                flex-wrap: wrap;
+            //    justify-content: space-between;
+            //    justify-content: end;
                 z-index: 4;
+                list-style: none;
+
+             
             }
-            .headerNav a div{
+
+            .headerNav #logo img{
+                width: 50%;
+            }
+
+            li{
+
+            }
+
+            #longer{    
+                height: 10vh;
+                width: 70%;
+                padding: 3% 0;
+            }
+
+            #logo{
+                width: 18%;
+                margin-top: 1.5%;
+                margin-left: 2%;
+            }
+
+            .longer{
+                background-color: rgb(0, 0, 0);
+                color: $primaryClr;
+                border-radius: 0.3em;
+                height: 60%;
+                width: 100%;
+                float: right;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-shadow: #3131314f 0px 0px 10px 1px;
+            }
+
+            #logo{order: 1;}
+            #longer{order: 2;}
+            #item1{order: 3;}
+            #item2{order: 4;}
+            #item3{order: 5;}
+
+            
+
+            #item1{
+                margin-top: 60vh;
+                height: 20vh;
+
+                width: 100vw;
+                padding: 0;
+                margin-bottom: -2vh;
+
+                font-size: 1.5em;
+            }
+            #item1 *{
+                display: block;
+                width: 100%;
+                text-align: center;
+                margin: 0;
+            }
+            #item2{
+                height: 5vh;
+                width: 100vw;
+                padding: 0;
+                margin: 0
+            }
+            #item2 *{
+                background-color: rgb(224, 224, 224);
+            }
+            #item3{
+                height: 5vh;
+                width: 100vw;
+                padding: 0;
+                margin: 0
+            }
+            #item3 *{
+                background-color: rgb(224, 224, 224);
+            }
+
+            .item{
+            
+                height: 70%;
+                width: 90%;
+                margin-left: 5%;
+                border-radius: 0.3em;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+
+/*
+            .headerNav ul li{
                 width: 4em;
-                height: 100%;
+                height: 10%;
                 text-align: center;
                 margin: 0 3%;
                 padding: 2em 0;
                 transition: all .2s ease 0s;
             }
-            .headerNav a div::after{
+            .headerNav ul li::after{
                 content: "";
                 display: block;
                 height: 7%;
                 background-color: chocolate;
                 width: 0;
             }
-            .headerNav a div:not(.longer):hover::after{
+            .headerNav ul li .item:hover::after{
                 animation-name: example;
                 animation-duration: 0.3s;
                 height: 0.2em;
@@ -116,11 +206,14 @@ body{
                 cursor: pointer;
                 color: chocolate;
             }
+            
+           
+*/
             /*==HEADER NAV==*/
 
             .titleContainer{
                 width: 100%;
-                height: 70vh;
+                height: 100vh;
                 position: relative;
                 color: #313131;
                 background-color: $primaryClr;
@@ -206,10 +299,120 @@ body{
     !TABLET
 */
         @media all and ($tabletBP){
-            /*==HEADER NAV==*/
-            .headerNav a .longer{
-                width: 50vw;
+            
+           
+             /*==HEADER NAV==*/   
+            
+             .headerNav{
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 10vh;
+                display: flex;
+            //    align-content: center;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+            //    justify-content: end;
+                z-index: 4;
+                list-style: none;
+
+             
             }
+
+            .headerNav #logo img{
+                width: 5vw;
+            }
+
+            li{
+
+            }
+
+            #longer{    
+                height: 8vh;
+                width: 40%;
+                padding: 2.5vh 0;
+                display: flex;
+                justify-content: start;
+            }
+
+            #logo{
+                width: 5%;
+                margin-top: 1.5%;
+                margin-left: 2%;
+            }
+
+            .longer{
+                background-color: rgb(0, 0, 0);
+                color: $primaryClr;
+                border-radius: 0.3em;
+                height: 100%;
+                width: 80%;
+                float: right;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                box-shadow: #3131314f 0px 0px 10px 1px;
+            }
+
+            #logo{order: 1;}
+            #longer{order: 2;}
+            #item1{order: 3;}
+            #item2{order: 4;}
+            #item3{order: 5;}
+
+            
+
+            #item1{
+                height: 80%;
+
+                width: 10%;
+                padding: 0;
+                margin: 0;
+                font-size: 1em;
+
+                margin-top: 2vh;
+            }
+            #item1 i{
+                display: none;
+            }
+            #item1 *{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #item2{
+                height: 80%;
+                width: 10vw;
+                padding: 0;
+                margin: 0
+            }
+            #item2 *{
+                background-color: transparent;
+            }
+            #item3{
+                height: 80%;
+                width: 10vw;
+                padding:  0;
+                margin: 0
+            }
+            #item3 *{
+                background-color: transparent;
+            }
+
+            .item{
+                height: 70%;
+                width: 90%;
+                margin-left: 5%;
+                border-radius: 0.3em;
+                margin: 0;
+                margin-top: 2vh;
+                
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
             /*==HEADER NAV==*/     
 
             .titleContainer{
@@ -267,6 +470,18 @@ body{
             .sunText{
                 display: none;
             }
+
+            .headerNav .logo{
+                margin-left: 2em;
+                width: 5%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .headerNav .logo img{
+                width: 70%;
+                display: block;
+            }
         }
 
 
@@ -275,12 +490,125 @@ body{
     !DESKTOP
 */
         @media all and ($desktopBP){
-           /*==HEADER NAV==*/     
-            .headerNav a .longer{
-                width: 70vw;
-                text-align: right;
-            }
-            /*==HEADER NAV==*/     
+           /*==HEADER NAV==*/   
+            
+           .headerNav{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 10vh;
+            display: flex;
+        //    align-content: center;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        //    justify-content: end;
+            z-index: 4;
+            list-style: none;
+
+         
+        }
+
+        .headerNav #logo img{
+            width: 3vw;
+        }
+
+        li{
+
+        }
+
+        #longer{    
+            height: 10vh;
+            width: 60%;
+            padding: 1.5% 0;
+            display: flex;
+            justify-content: end;
+        }
+
+        
+
+        .longer{
+            background-color: transparent;
+            color: black;
+            border-radius: 0.3em;
+            height: 100%;
+            width: 130%;
+            float: right;
+            display: flex;
+            text-align: end;
+            padding-left: 70%;
+            justify-content: center;
+            align-items: center;
+            box-shadow: none;
+        }
+
+
+        #logo{
+            width: 5%;
+            margin-top: 1%;
+            margin-left: 2%;
+        }
+
+
+        #logo{order: 1;}
+        #longer{order: 5;}
+        #item1{order: 2;}
+        #item2{order: 3;}
+        #item3{order: 4;}
+
+        
+
+        #item1{
+            height: 80%;
+
+            width: 5%;
+            padding: 0;
+            margin: 0;
+            font-size: 1em;
+
+            margin-top: 2vh;
+        }
+        #item1 i{
+            display: none;
+        }
+        #item1 *{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #item2{
+            height: 80%;
+            width: 5%;
+            padding: 0;
+            margin: 0
+        }
+        #item2 *{
+            background-color: transparent;
+        }
+        #item3{
+            height: 80%;
+            width: 5%;
+            padding:  0;
+            margin: 0
+        }
+        #item3 *{
+            background-color: transparent;
+        }
+
+        .item{
+            height: 70%;
+            width: 90%;
+            margin-left: 5%;
+            border-radius: 0.3em;
+            margin: 0;
+            margin-top: 2vh;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /*==HEADER NAV==*/    
             .titleContainer .Sun{
                 position: fixed;
                 right: 18vw;
@@ -310,6 +638,11 @@ body{
 
 
 /*=====---\/---==SECTION==---\/---=====*/
+
+/* 
+    !MOBILE
+*/
+
 section{
     width: 100%;
     overflow: hidden;
@@ -346,59 +679,117 @@ article{
 
 
 section {
-    .day{
+        .day{
 
+        }
+
+        .space{
+            height: 20vw;
+            position: relative;
+            background-color: #f5f5f5;
+
+            overflow: hidden;
+            img{
+                position: absolute;
+                top: 0;
+                width: 100%;
+            }
+            .wave2{
+                z-index: 0;
+            }
+            .wave1{
+                z-index: 2;
+            }
+        }
+
+        .night{
+            height: 150vh;
+            background-color: rgb(28, 24, 43);
+            position: relative;
+            z-index: 3;
+            background: rgb(215,215,215);
+            background: linear-gradient(180deg, #8b8da0 0%, rgb(53, 58, 78) 48%, rgb(15, 15, 24) 90%, #07070c 100%);
+            background: linear-gradient(180deg, #8b8da0 0%, rgb(53, 58, 78) 48%, rgb(29, 29, 43) 90%, #161620 100%);
+
+            img{
+                display: none;
+             }
+
+            .stars{
+                width: 90vw;
+                height: 100%;
+                position: absolute;
+                z-index: 1;
+                top: 0;
+                left: 0;
+            
+                background-image: url("../img/Stars2.svg");
+
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
     }
+/* 
+    !TABLET
+*/
+@media all and ($tabletBP){
 
-    .space{
-        height: 30vh;
-        position: relative;
-        background-color: #f5f5f5;
 
-        overflow: hidden;
-        img{
-            position: absolute;
-            top: 0;
-            width: 100%;
-        }
-        .wave2{
-            z-index: 0;
-        }
-        .wave1{
-            z-index: 2;
-        }
-    }
 
-    .night{
-        height: 150vh;
-        background-color: rgb(28, 24, 43);
-        position: relative;
-        z-index: 3;
-        background: rgb(215,215,215);
-        background: linear-gradient(180deg, #8b8da0 0%, rgb(53, 58, 78) 48%, rgb(15, 15, 24) 90%, #07070c 100%);
-        background: linear-gradient(180deg, #8b8da0 0%, rgb(53, 58, 78) 48%, rgb(29, 29, 43) 90%, #161620 100%);
-  
+section {
+        .day{
 
-        
-
-        .stars{
-            width: 90vw;
-            height: 100%;
-            position: absolute;
-            z-index: 1;
-            top: 0;
-            left: 0;
-          
-          
-            background-image: url("../img/Stars2.svg");
-
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
         }
 
-    }
+        .space{
+            height: 30vh;
+        }
+
+        .night{
+            height: 150vh;
+            background-color: rgb(28, 24, 43);
+            position: relative;
+            z-index: 3;
+            background: rgb(215,215,215);
+            background: linear-gradient(180deg, #8b8da0 0%, rgb(53, 58, 78) 48%, rgb(15, 15, 24) 90%, #07070c 100%);
+            background: linear-gradient(180deg, #8b8da0 0%, rgb(53, 58, 78) 48%, rgb(29, 29, 43) 90%, #161620 100%);
+
+            img{
+                display: inline-block;
+             }
+
+            .stars{
+                width: 90vw;
+                height: 100%;
+                position: absolute;
+                z-index: 1;
+                top: 0;
+                left: 0;
+            
+            
+                background-image: url("../img/Stars2.svg");
+
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+        }
+
+}
+
+}
+
+
+/* 
+    !DESKTOP
+*/
+@media all and ($desktopBP){
+
 
 }
 
