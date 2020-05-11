@@ -404,6 +404,20 @@ section .night {
   background: linear-gradient(180deg, #8b8da0 0%, #353a4e 48%, #1d1d2b 90%, #161620 100%);
 }
 
+section .night .stars {
+  width: 90vw;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-image: url("../img/Stars2.svg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /*=====---/\---==SECTION==---/\---=====*/
 /* 
 TODO - work in progress

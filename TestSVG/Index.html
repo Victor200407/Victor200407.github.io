@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,15 +16,14 @@
     <link rel="stylesheet" href="fontello/css/fontello.css" type="text/css" />
 
     <script>
-        $(function() {
-            
-            $(".toggle").on("click", function(){
-                
-                if($(".item").hasClass("active")){
+        $(function () {
+
+            $(".toggle").on("click", function () {
+
+                if ($(".item").hasClass("active")) {
                     $(".item").removeClass("active");
                     console.log("remove");
-                }
-                else{
+                } else {
                     $(".item").addClass("active");
                     console.log("add");
                 }
@@ -34,55 +34,59 @@
     </script>
 
 </head>
+
 <body>
     <div class="container">
         <header>
-         
-                <div class="headerNav">
-               
-                    <a href="">
-                        <div class="item">Home</div>
-                    </a>
-                    <a href="">
-                        <div class="item">About</div>
-                    </a>
-                    <a href="">
-                        <div class="item">Contact</div>
-                    </a>
-                    <a href="">
-                        <div class="longer">Other Projects</div>
-                    </a>
-                </div>
-         
+
+            <div class="headerNav">
+
+                <a href="">
+                    <div class="item">Home</div>
+                </a>
+                <a href="">
+                    <div class="item">About</div>
+                </a>
+                <a href="">
+                    <div class="item">Contact</div>
+                </a>
+                <a href="">
+                    <div class="longer">Other Projects</div>
+                </a>
+            </div>
+
             <div class="titleContainer">
-                
+
                 <img class="wave2" src="img/Wave2.svg" alt="">
                 <img class="wave1" src="img/Wave1.svg" alt="">
                 <img class="Sun" src="img/Sun.svg" alt="">
-                
-                <div class="Box">      
+
+                <div class="Box">
                     <div>
                         <h1>Sunsets</h1>
                         <p>In God we thrust</p>
-                    </div>           
+                    </div>
                 </div>
                 <div class="Box2">
                     <p>Some inspiring text, lavie e bele, raviolli. Lorem Ipsum Georgio Hamble</p>
                 </div>
-                
+
                 <a href="#section1">
-                        <div class="button">
-                            <h1><i class="demo-icon icon-angle-down"></i></h1>
-                        </div>
+                    <div class="button">
+                        <h1><i class="demo-icon icon-angle-down"></i></h1>
+                    </div>
                 </a>
 
             </div>
         </header>
         <section id="section1">
             <article class="day">
-                    <div class="sunText">Ohoho, Słoneczko się pokazało</div>
+                <h2>Uno moento</h2>
+
+
+                <div class="sunText">Ohoho, Słoneczko się pokazało</div>
             </article>
-            
+
             <article class="space">
                 <img class="wave2" src="img/Wave7.svg" alt="">
                 <img class="wave1" src="img/Wave8.svg" alt="">
@@ -90,10 +94,12 @@
 
             <article class="night">
                 <div class="sunText">Panie i Panowie, toż to noc nastała</div>
+                <img class="stars" src="img/Stars.svg" alt="">
             </article>
 
         </section>
 
     </div>
 </body>
+
 </html>
