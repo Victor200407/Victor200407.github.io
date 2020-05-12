@@ -78,7 +78,7 @@ body {
   color: #ffffff;
   border-radius: 0.3em;
   height: 60%;
-  width: 100%;
+  width: 50%;
   float: right;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -91,6 +91,7 @@ body {
           align-items: center;
   -webkit-box-shadow: #3131314f 0px 0px 10px 1px;
           box-shadow: #3131314f 0px 0px 10px 1px;
+  font-size: 1.5vh;
 }
 
 #logo {

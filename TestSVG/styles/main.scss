@@ -102,12 +102,13 @@ body{
                 color: $primaryClr;
                 border-radius: 0.3em;
                 height: 60%;
-                width: 100%;
+                width: 50%;
                 float: right;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 box-shadow: #3131314f 0px 0px 10px 1px;
+                font-size: 1.5vh;
             }
 
             #logo{order: 1;}
