@@ -15,9 +15,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
 
     <link rel="stylesheet" href="fontello/css/fontello.css" type="text/css" />
-
     <link rel="shortcut icon" type="image/x-icon" href="img/Logo.svg" />
 
+        <!--AOS-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <script src="../dist/aos.js"></script>
+        <script>
+        AOS.init({
+            easing: 'ease-in-out-sine'
+        });
+        </script>
+        <!--AOS-->
 
     <script>
         $(function () {
@@ -46,7 +58,7 @@
                 <ul class="headerNav">
                     <li id="logo"><img src="img/Logo.svg" alt=""></li>
                     <a id="item1" href="#section1"><li class="item"><i class="icon-angle-down"></i>Read More</li></a>
-                    <a id="item2" href="#section1"><li class="item">About</li></a>
+                    <a id="item2" href="#about"><li class="item">About</li></a>
                     <a id="item3" href="#footer"><li class="item">Contact</li></a>
                     <a id="longer" href="https://victor200407.github.io/Index.html"><li class="longer">Other Projects</li></a>
                 </ul>
@@ -100,11 +112,12 @@
         <section id="section1">
             <article class="day">
                 <div class="sunText">Ohoho, Słoneczko się pokazało</div>
-                <div class="textContainer">
+                <div class="textContainer" data-aos="fade-right">
                     <h2>Uno moento</h2>
                     <span class="subText">Dokata mi kantare, aaa</span>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt distinctio earum consectetur unde possimus repellat ipsum explicabo animi sed cum sapiente veritatis aquo vitae suscipit commodi, velit ut nesciunt molestiae!</p>
 
+                    
             
                     <p class="subText2">I'm still standing</p>
                     <p>Heee, Jeeee, Jeeee ipsum dolor sit amet consectetur adipisicing elit. Incidunt distinctio earum consectetur unde possimus repellat ipsum explicabo animi sed cum sapiente veritatis aquo vitae suscipit commodi, velit ut nesciunt molestiae!</p>
@@ -116,13 +129,13 @@
             </article>
             <article class="day">
                 <div class="sunText">Abogabo</div>
-                <div class="textContainer">
+                <div class="textContainer"  data-aos="fade-right">
                     <h2>Golden roses</h2>
                     <span class="subText">It's a sin?</span>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt distinctio earum consectetur unde possimus repellat ipsum explicabo animi sed cum sapiente veritatis quo vitae suscipit commodi, velit ut nesciunt molestiae!</p>
                 </div> 
 
-                <div class="textContainer">
+                <div class="textContainer"  data-aos="fade-right">
                     <h4>Endo Mondo</h4>
                     Italiano veroj
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -135,9 +148,9 @@
                 <img class="wave1" src="img/Wave8.svg" alt="">
             </div>
 
-            <article class="night">
-                <div class="sunText">Panie i Panowie, toż to noc nastała</div>
-                <div class="textContainer">
+            <article class="night" id="about">
+                <div class="sunText" data-aos="fade-down">Panie i Panowie, toż to noc nastała</div>
+                <div class="textContainer" data-aos="fade-right">
                     <h2>Uno moento</h2>
                     <span class="subText">Dokata mi kantare, aaa</span>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt distinctio earum consectetur unde possimus repellat ipsum explicabo animi sed cum sapiente veritatis aquo vitae suscipit commodi, velit ut nesciunt molestiae!</p>
@@ -153,8 +166,44 @@
         <footer id="footer">
             © 2020 All rights reserved.
         </footer>
-
     </div>
+
+
+
+
+        <!--AOS-->
+        <script>
+            AOS.init({
+            easing: 'ease-in-out-sine'
+            });
+        </script>
+    
+        <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.11/require.min.js"></script>
+        <script>
+            requirejs.config({
+                baseUrl: '../dist',
+            });
+    
+            require(['aos'], function(AOS){
+                AOS.init({
+                    easing: 'ease-in-out-sine'
+                });
+            });
+        </script> -->
+      <!--AOS-->
+
+
+       <!--LOADING SCREEN  
+       <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+      </div>
+      <script>
+          $(window).on("load",function(){
+            $(".loader-wrapper").fadeOut("slow");
+          });
+      </script>
+      LOADING SCREEN-->
+
 </body>
 
 </html>
