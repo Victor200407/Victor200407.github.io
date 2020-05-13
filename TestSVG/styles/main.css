@@ -733,10 +733,21 @@ section {
 }
 
 article {
-  height: 200vh;
+  min-height: 150vh;
   width: 100%;
   overflow: hidden;
   overflow: visible;
+}
+
+article .textContainer {
+  width: 100vw;
+  padding: 5% 5%;
+  margin-top: 10vh;
+}
+
+article .textContainer p {
+  line-height: 1.5em;
+  margin-top: 2em;
 }
 
 .sunText {
@@ -845,6 +856,25 @@ section .night .stars {
 /* 
     !DESKTOP
 */
+@media all and (min-width: 1200px) {
+  article .textContainer {
+    font-size: 1.3em;
+    width: 60vw;
+    padding: 5% 10%;
+    margin-top: 0vh;
+  }
+  article .textContainer h2 {
+    margin-left: 2vw;
+  }
+  article .textContainer .subText {
+    margin-left: 2vw;
+  }
+  article .textContainer p {
+    line-height: 1.5em;
+    margin-top: 2em;
+  }
+}
+
 /*=====---/\---==SECTION==---/\---=====*/
 /* 
 TODO - work in progress

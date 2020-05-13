@@ -657,11 +657,23 @@ section{
 }
 
 article{
-    height: 200vh;
+    min-height: 150vh;
     width: 100%;
     overflow: hidden;
     overflow: visible;
+
+    .textContainer{
+        width: 100vw;
+        padding: 5% 5%;
+        margin-top: 10vh;
+        p{
+            line-height: 1.5em;
+            margin-top: 2em;
+        }
+    }
 }
+
+
 
 .sunText{
     position: sticky;
@@ -694,7 +706,6 @@ section {
             height: 20vw;
             position: relative;
             background-color: #f5f5f5;
-
             overflow: hidden;
             img{
                 position: absolute;
@@ -796,7 +807,24 @@ section {
     !DESKTOP
 */
 @media all and ($desktopBP){
-
+    article{
+        .textContainer{
+            font-size: 1.3em;
+            width: 60vw;
+            padding: 5% 10%;
+            margin-top: 0vh;
+            h2{
+                margin-left: 2vw;
+            }
+            .subText{
+                margin-left: 2vw;
+            }
+            p{
+                line-height: 1.5em;
+                margin-top: 2em;
+            }
+        }
+    }
 
 }
 
