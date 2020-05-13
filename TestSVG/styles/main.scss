@@ -743,7 +743,7 @@ section{
 }
 
 article{
-    min-height: 150vh;
+    min-height: 50vh;
     width: 100%;
     overflow: hidden;
     overflow: visible;
@@ -905,6 +905,10 @@ section {
             .subText{
                 margin-left: 2vw;
             }
+            .subText2{
+                margin-left: 2vw;
+                margin-top: 10vh;
+            }
             p{
                 line-height: 1.5em;
                 margin-top: 2em;
@@ -920,3 +924,24 @@ section {
 /* 
 TODO - work in progress
 */
+
+
+
+/*=====---\/---==FOOTER==---\/---=====*/
+    footer{
+        background-color: rgb(41, 41, 54);
+        color: #fff;
+        text-align: center;
+    }
+
+
+
+
+
+
+
+
+
+
+
+/*=====---/\---==FOOTER==---/\---=====*/
