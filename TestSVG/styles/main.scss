@@ -169,6 +169,90 @@ body{
                 align-items: center;
             }
 
+            /*
+                ?ANIMATION
+            */
+                    #item1::after{
+                        display: block;
+                        content: '';
+                        width: 0%;
+                        margin-left: 10%;
+                        height: 5%;
+                        background-color: blueviolet;
+                    }
+                    #item2::after{
+                        display: block;
+                        content: '';
+                        width: 0%;
+                        margin-left: 10%;
+                        height: 5%;
+                        background-color: blueviolet;
+                    }
+                    #item3::after{
+                        display: block;
+                        content: '';
+                        width: 0%;
+                        margin-left: 10%;
+                        height: 5%;
+                        background-color: blueviolet;
+                    }
+
+
+
+                            @keyframes example{
+                                0%{height: .2em; width: 0%;}
+                                30%{width: 40%;}
+                                60%{background-color: chocolate; width: 60%;}
+                                100%{background-color: #ee1a1a; width: 0%; }
+                            }
+
+                            #item1:hover::after{
+                                animation-name: example;
+                                display: block;
+                                animation-duration: .5s;
+                                animation-direction: reverse;
+                                width: 0;
+                            }
+                            #item1:hover{
+                                transition: all 0.3s ease-in-out 0s;
+                                font-weight: 900;
+                            }
+
+                            #item2:hover::after{
+                                transition: all 0.3s ease-in-out 0s;
+                                animation-name: example;
+                                display: block;
+                                animation-duration: .5s;
+                                animation-direction: reverse;
+                                width: 0;
+                            }
+                            #item2:hover{
+                                transition: all 0.3s ease-in-out 0s;
+                                font-weight: 900;
+                            }
+
+
+                            #item3:hover::after{
+                                transition: all 0.3s ease-in-out 0s;
+                                animation-name: example;
+                                display: block;
+                                animation-duration: .5s;
+                                animation-direction: reverse;
+                                width: 0;
+                            }
+                            #item3:hover{
+                                transition: all 0.3s ease-in-out 0s;
+                                font-weight: 900;
+                            }
+
+                            #longer:hover .longer{
+                                transition: all 0.3s ease-in-out 0s;
+                                color: chocolate;
+                                font-weight: 900;
+                            }
+                 /*
+                ?ANIMATION
+                */
 
 /*
             .headerNav ul li{
@@ -582,7 +666,9 @@ body{
             display: flex;
             justify-content: center;
             align-items: center;
+            width: 150%;
         }
+
         #item2{
             height: 80%;
             width: 5%;
