@@ -1125,6 +1125,10 @@ section .night .textContainer {
   color: #e2e2e2;
 }
 
+section .night h2 {
+  color: #fff;
+}
+
 /* 
     !TABLET
 */
