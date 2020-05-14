@@ -558,6 +558,20 @@ body {
   position: relative;
 }
 
+@media all and (max-height: 700px) {
+  .titleContainer .Box {
+    top: -2vh;
+    font-size: 0.9em;
+  }
+}
+
+@media all and (max-height: 540px) {
+  .titleContainer .Box {
+    top: -10vh;
+    font-size: 0.8em;
+  }
+}
+
 .titleContainer .Box div {
   position: relative;
   width: 60%;
