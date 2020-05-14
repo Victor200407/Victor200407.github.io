@@ -330,10 +330,10 @@ body {
 }
 
 #longer:hover .longer {
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
   color: chocolate;
-  font-weight: 700;
+  font-weight: 200;
 }
 
 /*
@@ -1163,6 +1163,9 @@ section .night .textContainer {
   }
   article .textContainer .subText {
     margin-left: 2vw;
+    font-size: .9em;
+    font-weight: 100;
+    font-style: normal;
   }
   article .textContainer .subText2 {
     margin-left: 2vw;
@@ -1185,7 +1188,7 @@ footer {
   font-weight: 500;
   text-align: center;
   padding: 0.3em;
-  letter-spacing: .4em;
+  letter-spacing: normal;
 }
 
 /*=====---/\---==FOOTER==---/\---=====*/
