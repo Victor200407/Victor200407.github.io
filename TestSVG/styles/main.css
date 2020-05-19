@@ -13,6 +13,47 @@ body {
 
 html {
   scroll-behavior: smooth;
+  -webkit-animation-name: scrollLock;
+          animation-name: scrollLock;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  animation-direction: reverse;
+}
+
+@-webkit-keyframes scrollLock {
+  0% {
+    overflow: auto;
+  }
+  100% {
+    overflow: hidden;
+  }
+}
+
+@keyframes scrollLock {
+  0% {
+    overflow: auto;
+  }
+  100% {
+    overflow: hidden;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0.3vw;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #bbb;
+  height: 7em;
+  border-radius: 3em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #999;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #38383800;
 }
 
 .container {
