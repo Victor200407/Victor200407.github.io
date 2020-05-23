@@ -1,3 +1,19 @@
+
+
+
+/*
+?       ===VARIABLES===
+*/
+$primaryClr: #ffffff;
+$desktopBP: "min-width: 1200px";
+$tabletBP: "min-width: 644px";
+
+/*
+?       ===VARIABLES===
+*/
+
+
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -10,19 +26,25 @@ body{
 
 }
 
+html{
+    scroll-behavior: smooth;
+    overflow: visible;
+}
 
+@media all and ($tabletBP){
 html{
     scroll-behavior: smooth;
     animation-name: scrollLock;
     animation-duration: 5s;
     animation-direction: reverse;
 }
+}
 
                 @keyframes scrollLock{
                     0%{overflow: auto;}
                     100%{overflow: hidden;}
                 }
-
+            
 
 
 ::-webkit-scrollbar
@@ -56,16 +78,7 @@ a{
 }
 
 
-/*
-?       ===VARIABLES===
-*/
-    $primaryClr: #ffffff;
-    $desktopBP: "min-width: 1200px";
-    $tabletBP: "min-width: 644px";
 
-/*
-?       ===VARIABLES===
-*/
 
 
 body{
@@ -881,7 +894,7 @@ section {
         }
 
         .night{
-            height: 150vh;
+            min-height: 150vh;
             background-color: rgb(28, 24, 43);
             position: relative;
             z-index: 3;
@@ -1026,6 +1039,225 @@ TODO - work in progress
         letter-spacing: normal;
     }
 
+//MOBILE
+.footerContact{
+    position: relative;
+    bottom: 5%;
+    left: 0;
+    width: 100%;
+
+    margin-top: 10em;
+    
+
+    height: minmax(20px, auto);
+    //background-color: rgb(175, 126, 126);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &>div{
+        width: 76%;
+        height: 100%;
+
+        // background-color: blue;
+
+        border-radius: 1em;
+
+        padding: 1em 1em;
+
+        position: relative;
+        z-index: 5;
+
+        transition: .7s;
+
+       
+        }
+    }
+
+    .footerContacText{
+        position: relative;
+        width: 100%;
+        text-align: center;
+        color: rgba(245, 245, 245, 0.5);
+
+        & i{
+            display: block;
+            font-size: 2em;
+            margin-bottom: .4em;
+
+            transition: .7s;
+        }
+
+        & p {
+            font-size: 1em;
+            margin-bottom: .9em;
+            transition: .7s;
+        }
+
+    
+    }
+
+    .footerContactInfo{
+        p{
+            margin: .5em;
+            margin-top: 2em;
+            display: inline-block;
+            color: rgb(163, 163, 163);
+            position: relative;
+            z-index: 6;
+
+        }
+
+        .left{
+            width: 100%;
+            float: left;
+            //background-color: yellowgreen;
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 5vh;
+        }
+
+        .right{
+            width: 100%;
+            float: right;
+            //background-color: yellow;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            margin-bottom: 5vh;
+
+            & p{
+                text-align: right;
+                display: block;
+            }
+        }
+    }
+
+
+
+
+
+//REST
+    @media all and ($tabletBP){
+            .footerContact{
+                position: absolute;
+                bottom: 5%;
+                left: 0;
+                width: 100%;
+        
+                margin-top: 0em;
+
+                height: minmax(20px, auto);
+                //background-color: rgb(175, 126, 126);
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                &>div{
+                    width: 76%;
+                    height: 100%;
+                    clip-path: inset(0% 43% 0% 43%);
+                // background-color: blue;
+
+                border-radius: 1em;
+
+                padding: 1em 1em;
+
+                    position: relative;
+                    z-index: 5;
+
+                    transition: .7s;
+
+                    &:hover{
+                        transition: all .7s ease 0s;
+                        //background-color: rgba(177, 177, 177, 0.815);
+                        clip-path: inset(0% 0% 0% 0%);
+
+                        .footerContacText i
+                        {
+                            transition: .8s;
+                            color: white;
+                        }
+
+                        .footerContacText #contactLogoText{
+                            color: white;
+                            letter-spacing: .05em;
+                        }
+
+                    }
+                }
+
+                .footerContacText{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    text-align: center;
+                    color: rgba(245, 245, 245, 0.5);
+
+                    & i{
+                        display: block;
+                        font-size: 2em;
+                        margin-bottom: .4em;
+
+                        transition: .7s;
+                    }
+
+                    & p {
+                        font-size: 1em;
+                        margin-bottom: .9em;
+                        transition: .7s;
+                    }
+
+                    &:hover p{
+                        color: white;
+                        letter-spacing: .05em;
+                    }
+                }
+
+                .footerContactInfo{
+                    p{
+                        margin: .5em;
+                        margin-top: 2em;
+                        display: inline-block;
+                        color: rgb(163, 163, 163);
+                        position: relative;
+                        z-index: 6;
+
+                        &:hover{
+                            color: white;
+                        }
+                    }
+
+                    .left{
+                        width: 45%;
+                        float: left;
+                        //background-color: yellowgreen;
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin-bottom: 0em;
+                    }
+
+                    .right{
+                        width: 45%;
+                        float: right;
+                        //background-color: yellow;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: flex-end;
+                        margin-bottom: 0em;
+
+                        & p{
+                            text-align: right;
+                            display: block;
+                        }
+                    }
+                }
+            
+            }
+    }
 
 
 /*=====---/\---==FOOTER==---/\---=====*/

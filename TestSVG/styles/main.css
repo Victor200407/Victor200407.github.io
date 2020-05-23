@@ -1,4 +1,10 @@
 @charset "UTF-8";
+/*
+?       ===VARIABLES===
+*/
+/*
+?       ===VARIABLES===
+*/
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -13,11 +19,18 @@ body {
 
 html {
   scroll-behavior: smooth;
-  -webkit-animation-name: scrollLock;
-          animation-name: scrollLock;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
-  animation-direction: reverse;
+  overflow: visible;
+}
+
+@media all and (min-width: 644px) {
+  html {
+    scroll-behavior: smooth;
+    -webkit-animation-name: scrollLock;
+            animation-name: scrollLock;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    animation-direction: reverse;
+  }
 }
 
 @-webkit-keyframes scrollLock {
@@ -68,12 +81,6 @@ a {
   color: unset;
 }
 
-/*
-?       ===VARIABLES===
-*/
-/*
-?       ===VARIABLES===
-*/
 body {
   background-color: #ffffff;
 }
@@ -1133,7 +1140,7 @@ section .space .wave1 {
 }
 
 section .night {
-  height: 150vh;
+  min-height: 150vh;
   background-color: #1c182b;
   position: relative;
   z-index: 3;
@@ -1248,6 +1255,206 @@ footer {
   text-align: center;
   padding: 0.3em;
   letter-spacing: normal;
+}
+
+.footerContact {
+  position: relative;
+  bottom: 5%;
+  left: 0;
+  width: 100%;
+  margin-top: 10em;
+  height: minmax(20px, auto);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footerContact > div {
+  width: 76%;
+  height: 100%;
+  border-radius: 1em;
+  padding: 1em 1em;
+  position: relative;
+  z-index: 5;
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+
+.footerContacText {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  color: rgba(245, 245, 245, 0.5);
+}
+
+.footerContacText i {
+  display: block;
+  font-size: 2em;
+  margin-bottom: .4em;
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+
+.footerContacText p {
+  font-size: 1em;
+  margin-bottom: .9em;
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+
+.footerContactInfo p {
+  margin: .5em;
+  margin-top: 2em;
+  display: inline-block;
+  color: #a3a3a3;
+  position: relative;
+  z-index: 6;
+}
+
+.footerContactInfo .left {
+  width: 100%;
+  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 5vh;
+}
+
+.footerContactInfo .right {
+  width: 100%;
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 5vh;
+}
+
+.footerContactInfo .right p {
+  text-align: right;
+  display: block;
+}
+
+@media all and (min-width: 644px) {
+  .footerContact {
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    width: 100%;
+    margin-top: 0em;
+    height: minmax(20px, auto);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footerContact > div {
+    width: 76%;
+    height: 100%;
+    -webkit-clip-path: inset(0% 43% 0% 43%);
+            clip-path: inset(0% 43% 0% 43%);
+    border-radius: 1em;
+    padding: 1em 1em;
+    position: relative;
+    z-index: 5;
+    -webkit-transition: .7s;
+    transition: .7s;
+  }
+  .footerContact > div:hover {
+    -webkit-transition: all .7s ease 0s;
+    transition: all .7s ease 0s;
+    -webkit-clip-path: inset(0% 0% 0% 0%);
+            clip-path: inset(0% 0% 0% 0%);
+  }
+  .footerContact > div:hover .footerContacText i {
+    -webkit-transition: .8s;
+    transition: .8s;
+    color: white;
+  }
+  .footerContact > div:hover .footerContacText #contactLogoText {
+    color: white;
+    letter-spacing: .05em;
+  }
+  .footerContact .footerContacText {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: rgba(245, 245, 245, 0.5);
+  }
+  .footerContact .footerContacText i {
+    display: block;
+    font-size: 2em;
+    margin-bottom: .4em;
+    -webkit-transition: .7s;
+    transition: .7s;
+  }
+  .footerContact .footerContacText p {
+    font-size: 1em;
+    margin-bottom: .9em;
+    -webkit-transition: .7s;
+    transition: .7s;
+  }
+  .footerContact .footerContacText:hover p {
+    color: white;
+    letter-spacing: .05em;
+  }
+  .footerContact .footerContactInfo p {
+    margin: .5em;
+    margin-top: 2em;
+    display: inline-block;
+    color: #a3a3a3;
+    position: relative;
+    z-index: 6;
+  }
+  .footerContact .footerContactInfo p:hover {
+    color: white;
+  }
+  .footerContact .footerContactInfo .left {
+    width: 45%;
+    float: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 0em;
+  }
+  .footerContact .footerContactInfo .right {
+    width: 45%;
+    float: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-bottom: 0em;
+  }
+  .footerContact .footerContactInfo .right p {
+    text-align: right;
+    display: block;
+  }
 }
 
 /*=====---/\---==FOOTER==---/\---=====*/
