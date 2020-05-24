@@ -1056,7 +1056,7 @@ TODO - work in progress
     justify-content: center;
     align-items: center;
     
-    &>div{
+    &>.footerContactContent{
         width: 76%;
         height: 100%;
 
@@ -1155,7 +1155,7 @@ TODO - work in progress
                 justify-content: center;
                 align-items: center;
                 
-                &>div{
+                &>.footerContactContent{
                     width: 76%;
                     height: 100%;
                     clip-path: inset(0% 43% 0% 43%);
@@ -1174,7 +1174,7 @@ TODO - work in progress
                         transition: all .7s ease 0s;
                         //background-color: rgba(177, 177, 177, 0.815);
                         clip-path: inset(0% 0% 0% 0%);
-
+         
                         .footerContacText i
                         {
                             transition: .8s;
@@ -1187,6 +1187,8 @@ TODO - work in progress
                         }
 
                     }
+
+             
                 }
 
                 .footerContacText{
@@ -1254,10 +1256,66 @@ TODO - work in progress
                             display: block;
                         }
                     }
+
+                   /* &::before{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        display: block;
+                        content: 'UI/UX';
+                        z-index: 8;
+                        width: 100px;
+                        height: 200px;
+                        background-color: blue;
+                    }
+                    &::after{
+                        position: absolute;
+                        z-index: 9;
+                        bottom: 20px;
+                        right: 0;
+                        display: block;
+                        content: 'UI/UX';
+                        z-index: 8;
+                        width: 100px;
+                        height: 200px;
+                        background-color: blue;
+                    }*/
                 }
-            
             }
     }
+
+    .name{
+        width: 35%;
+        height: 200%;
+       // background-color: rgb(151, 96, 29);
+        font-size: 5em;
+        color: rgba(255, 255, 255, 0.123);
+        opacity: 0;
+        transition: all .4s ease 0s;
+        font-weight: 100;
+    }
+
+    #left{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        text-align: right;
+    }
+
+    #right{
+        text-align: left;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+.footerContact:hover{
+    .name{
+        transition: all 1s ease 0s;
+        opacity: 1;
+    }
+}
+
 
 
 /*=====---/\---==FOOTER==---/\---=====*/

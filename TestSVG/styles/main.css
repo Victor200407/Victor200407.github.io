@@ -1275,7 +1275,7 @@ footer {
           align-items: center;
 }
 
-.footerContact > div {
+.footerContact > .footerContactContent {
   width: 76%;
   height: 100%;
   border-radius: 1em;
@@ -1365,7 +1365,7 @@ footer {
         -ms-flex-align: center;
             align-items: center;
   }
-  .footerContact > div {
+  .footerContact > .footerContactContent {
     width: 76%;
     height: 100%;
     -webkit-clip-path: inset(0% 43% 0% 43%);
@@ -1377,18 +1377,18 @@ footer {
     -webkit-transition: .7s;
     transition: .7s;
   }
-  .footerContact > div:hover {
+  .footerContact > .footerContactContent:hover {
     -webkit-transition: all .7s ease 0s;
     transition: all .7s ease 0s;
     -webkit-clip-path: inset(0% 0% 0% 0%);
             clip-path: inset(0% 0% 0% 0%);
   }
-  .footerContact > div:hover .footerContacText i {
+  .footerContact > .footerContactContent:hover .footerContacText i {
     -webkit-transition: .8s;
     transition: .8s;
     color: white;
   }
-  .footerContact > div:hover .footerContacText #contactLogoText {
+  .footerContact > .footerContactContent:hover .footerContacText #contactLogoText {
     color: white;
     letter-spacing: .05em;
   }
@@ -1416,6 +1416,31 @@ footer {
   .footerContact .footerContacText:hover p {
     color: white;
     letter-spacing: .05em;
+  }
+  .footerContact .footerContactInfo {
+    /* &::before{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        display: block;
+                        content: 'UI/UX';
+                        z-index: 8;
+                        width: 100px;
+                        height: 200px;
+                        background-color: blue;
+                    }
+                    &::after{
+                        position: absolute;
+                        z-index: 9;
+                        bottom: 20px;
+                        right: 0;
+                        display: block;
+                        content: 'UI/UX';
+                        z-index: 8;
+                        width: 100px;
+                        height: 200px;
+                        background-color: blue;
+                    }*/
   }
   .footerContact .footerContactInfo p {
     margin: .5em;
@@ -1455,6 +1480,37 @@ footer {
     text-align: right;
     display: block;
   }
+}
+
+.name {
+  width: 35%;
+  height: 200%;
+  font-size: 5em;
+  color: rgba(255, 255, 255, 0.123);
+  opacity: 0;
+  -webkit-transition: all .4s ease 0s;
+  transition: all .4s ease 0s;
+  font-weight: 100;
+}
+
+#left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: right;
+}
+
+#right {
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.footerContact:hover .name {
+  -webkit-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
+  opacity: 1;
 }
 
 /*=====---/\---==FOOTER==---/\---=====*/
