@@ -1336,11 +1336,24 @@ TODO - work in progress
 
 /*=====---/\---==FOOTER==---/\---=====*/
 
+/*
+!MARCELOWI PRZYCISKI NIE DZIAŁAŁY WIĘC JAKBY COŚ NIE DZIAŁAŁO TO NIE MOJA WINA
+*/
+
+
+
 @media all and ($tabletBP){
     .headerNav{
         position: relative;
         z-index: 21;
+    }
 }
+
+@media all and ($desktopBP){
+    .headerNav{
+        position: absolute;
+        z-index: 21;
+    }
 }
 
 

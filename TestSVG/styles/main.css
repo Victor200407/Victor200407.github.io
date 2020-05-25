@@ -1520,9 +1520,19 @@ footer {
 }
 
 /*=====---/\---==FOOTER==---/\---=====*/
+/*
+!MARCELOWI PRZYCISKI NIE DZIAŁAŁY WIĘC JAKBY COŚ NIE DZIAŁAŁO TO NIE MOJA WINA
+*/
 @media all and (min-width: 644px) {
   .headerNav {
     position: relative;
+    z-index: 21;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .headerNav {
+    position: absolute;
     z-index: 21;
   }
 }
