@@ -1141,6 +1141,7 @@ section .space .wave1 {
 
 section .night {
   min-height: 150vh;
+  height: minmax(150vh, auto);
   background-color: #1c182b;
   position: relative;
   z-index: 3;
@@ -1185,7 +1186,7 @@ section .night h2 {
     height: 30vh;
   }
   section .night {
-    height: 150vh;
+    height: minmax(150vh, auto);
     background-color: #1c182b;
     position: relative;
     z-index: 3;
@@ -1348,8 +1349,13 @@ footer {
 }
 
 @media all and (min-width: 644px) {
+  .footerSpace {
+    height: 67vh;
+    position: relative;
+  }
   .footerContact {
     position: absolute;
+    z-index: 9;
     bottom: 5%;
     left: 0;
     width: 100%;
@@ -1514,6 +1520,13 @@ footer {
 }
 
 /*=====---/\---==FOOTER==---/\---=====*/
+@media all and (min-width: 644px) {
+  .headerNav {
+    position: relative;
+    z-index: 21;
+  }
+}
+
 /*-------LOADING SCREEN--------
                                             .content {
                                                 display: flex;
