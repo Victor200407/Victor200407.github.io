@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css" type="text/css">
+
+
+    <!--AOS-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!--[if lt IE 9]>
+        <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <script src="../dist/aos.js"></script>
+        <script>
+        AOS.init({
+            easing: 'ease-in-out-sine'
+        });
+        </script>
+    <!--AOS-->
+
+
+    <link href='https://fonts.googleapis.com/css?family=Sen' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Abril Fatface' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/FICON.png" />
+
+    <link rel="stylesheet" href="fontello/css/fontello.css" type="text/css" />
+
+    <!-- <script type="text/javascript" src="scripts/main.js"></script> -->
+
+    <!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script> 
+    $(document).ready(function(){
+        $(button).click(function(){
+ 
+                    $("#roleta").slideToggle({
+                    height: '50%',
+                    });
+
+                    $(".titlecontainer").slideToggle({
+                    height: '50%',
+                    });
+        });
+    });
+    </script>
+    -->
+
+
+    <title>PERSPEKTYWA</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(function() {
+            
+            $(".toggle").on("click", function(){
+                
+                if($(".item").hasClass("active")){
+                    $(".item").removeClass("active");
+                    console.log("remove");
+                }
+                else{
+                    $(".item").addClass("active");
+                    console.log("add");
+                }
+
+            })
+
+        });
+    </script>
+    <!--NAV-->
+
+
+</head>
+<body>
+    <div class="container" id="home">
+        
+        <nav>
+            <ul class="menu">
+                <li class="logo"><a href="https://victor200407.github.io/Index.html"><span class="navFont">Pozostałe Projekty</span></a></li>
+                <li class="item"><a href="#home"><span class="navFont">Home</span></a></li>
+                <li class="item"><a href="#about"><span class="navFont">About</span></a></li>
+                <li class="item"><a href="#footer"><span class="navFont">Contact</span></a></li>
+                <li class="toggle"><span class="bars"></span></li>    
+            </ul>
+        </nav>
+
+
+        <header>
+            <div id="titleContainer"><h1>PERSPEKTYWA</h1></div>
+
+         <!--
+                <video autoplay loop muted>
+                <source src="mp4/1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                 </video>
+         -->
+
+            <a href="#sectionArticle1">
+                <div id="headerButton">Dalej<i class="demo-icon icon-angle-down"></i></div>
+            </a>
+        </header>
+        
+
+        <!--        <main class="topText" id="main" >
+            <h1 style="margin-bottom: 4%;" id="about">główne założenie</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore earum dolorem laboriosam aut sint voluptate</p>
+        </main>
+    -->
+
+        <section>
+            <a href="#home">
+                <div class="stickyButton"><i class="demo-icon icon-angle-up"></i></div>
+            </a>
+            
+            <div class="sectionContainer">
+                <div class="stickyContainerNav">    
+                    <ul>
+                        <li id="Menu">MENU</li>
+
+                        <a href="#sectionArticle1">
+                            <li>I</li>
+                        </a>
+
+                        <a href="#sectionArticle2">
+                            <li>II</li>
+                        </a>
+                        
+                        <a href="#sectionArticle3">
+                            <li>III</li>
+                        </a>
+
+                        <a href="#sectionArticle4">
+                            <li>IV</li>
+                        </a>
+
+                        <a href="#sectionArticle5">
+                            <li>V</li>
+                        </a>
+
+                        <a href="#sectionArticle6">
+                            <li>VI</li>
+                        </a>
+
+                        <a href="#sectionArticle7">
+                            <li>VII</li>
+                        </a>
+
+                        <a href="#sectionArticle8">
+                            <li>VIII</li>
+                        </a>
+
+                        <a href="#sectionArticle9">
+                            <li>IX</li>
+                        </a>
+
+                        <a href="#sectionArticle10">
+                            <li>X</li>
+                        </a>
+
+                        <a href="#sectionArticle11">
+                            <li>XI</li>
+                        </a>
+
+                        <a href="#sectionArticle12">
+                            <li>XII</li>
+                        </a>
+
+                       
+                    </ul>
+                </div>
+
+                <div class="sectionContainerText">
+
+                    <article id="sectionArticle1" data-aos="fade-right">
+                        <p>I</p>
+                        <h1>Time's Stopped</h1>
+                        <p class="hidden">Czas płynie nieubłaganie, dla niektórych szybciej, dla niektórych wolniej. A co gdyby go zatrzymać? Gdyby można było odpocznąć, wziąść głęboki wdech, zacząć docaniać to co mamy. Gdyby można było go tylko zatrzymać...</p>
+                        <div class="sectionContainerTextImg">
+                            <img src="img/1.jpeg" alt="" >
+
+                            <div class="sectionContainerTextImgButton R B"><h3>Hover Me</h3>
+                                <div><p><h1>Czas</h1><span class="TextOnHover">Czas płynie nieubłaganie, dla niektórych szybciej, dla niektórych wolniej. A co gdyby go zatrzymać? Gdyby można było odpocznąć, wziąść głęboki wdech, zacząć docaniać to co mamy. Gdyby można było go tylko zatrzymać...</span></p></div>
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <article id="sectionArticle2" data-aos="fade-right">
+                        <p>II</p>
+                        <h1>Look At The Sky</h1>
+                        <p class="hidden">My ludzie od dawien dawna patrzyliśmy w niebo. Szukaliśmy tam wolności, odskoczni od trudów życia codziennego. Takiej wolności dopatrujemy się wśród ptaków, które mogą swobodnie przwemieżać bezkres nieboskłonu</p>
+                        <div class="sectionContainerTextImg">
+                            <img src="img/5.jpg" alt="">
+                            
+                            <div class="sectionContainerTextImgButton L T blackColor"><h3>Hover Me</h3>
+                                <div><p><h1>Wolność</h1><span class="TextOnHover">My ludzie od dawien dawna patrzyliśmy w niebo. Szukaliśmy tam wolności, odskoczni od trudów życia codziennego. Takiej wolności dopatrujemy się wśród ptaków, które mogą swobodnie przwemieżać bezkres nieboskłonu</span></p></div>
+                            </div>  
+
+                        </div>
+                    </article>
+
+                    <article id="sectionArticle3" data-aos="fade-right">
+                        <p>III</p>
+                        <h1>Wild Nature</h1>
+                        <p class="hidden">Natura... zamknięta w czterech ścianach,<br> zniewolona ...jako trofeum</p>
+                        <div class="sectionContainerTextImg">
+                            <img src="img/7.jpg" alt="">
+
+                            <div class="sectionContainerTextImgButton R B whiteColor"><h3>Hover Me</h3>
+                                <div><p><h1>Dzika natura</h1><span class="TextOnHover">Natura... zamknięta w czterech ścianach,<br> zniewolona ...jako trofeum</span></p></div>
+                            </div>  
+                        </div>
+                        
+                    </article>
+
+                    <article id="sectionArticle4" data-aos="fade-right">
+                        <p>IV</p>
+                        <h1>Shooting Stars</h1>
+                        <p class="hidden">Niebo - kopuła nas otaczająca, za dnia blado niebiska, lecz nocą lśni milionem gwiazd</p>
+                        <div class="sectionContainerTextImg"> 
+                            <img src="img/8.jpg" alt="">
+
+                            <div class="sectionContainerTextImgButton L T whiteColor"><h3>Hover Me</h3>
+                                <div><p><h1>Nocne niebo</h1><span class="TextOnHover">Niebo - kopuła nas otaczająca, za dnia blado niebiska, lecz nocą lśni milionem gwiazd</span></p></div>
+                            </div>  
+                        </div>
+                    </article>
+
+                    <article id="sectionArticle5" data-aos="fade-right">
+                        <p>V</p>
+                        <h1>Night Dream</h1>
+                        <p class="hidden">Czasem chcemy docenić piękno przyrody, po prostu schylić się i podziwiać</p>
+                        <div class="sectionContainerTextImg">
+                            <img src="img/9.jpg" alt="">
+
+                            <div class="sectionContainerTextImgButton R T whiteColor"><h3>Hover Me</h3>
+                                <div><p><h1>Sen minionej nocy</h1><span class="TextOnHover">Czasem chcemy docenić piękno przyrody, <br> po prostu schylić się i podziwiać</span></p></div>
+                            </div>  
+                        </div>
+                    </article>
+
+                    <article id="sectionArticle6" data-aos="fade-right">
+                        <p>VI</p>
+                        <h1>Fast One</h1>
+                        <p class="hidden">-Po co ten pośpiech? <br> -Bo ja lubie szybko <br> -A ja lubie wolno</p>
+                        <div class="sectionContainerTextImg">
+                            <img src="img/Schody.jpg" alt="Alt">
+
+                            <div class="sectionContainerTextImgButton R B whiteColor"><h3>Hover Me</h3>
+                                <div><p><h1>Pośpiech</h1><span class="TextOnHover">-Po co ten pośpiech? <br> -Bo ja lubie szybko <br> -A ja lubie wolno</span></p></div>
+                            </div>  
+                        </div>
+                    </article>
+
+                    <article id="sectionArticle7" data-aos="fade-right">
+                        <p>VII</p>
+                        <h1>Boring Day</h1>
+                        <p class="hidden">Ale nudy</p>
+                        <div class="sectionContainerTextImg">
+                            <img src="img/11.JPG" alt="Alt">
+
+                            <div class="sectionContainerTextImgButton R B whiteColor"><h3>Hover Me</h3>
+                                <div><p><h1>Nudny dzień</h1><span class="TextOnHover">Ale nudy</span></p></div>
+                            </div>  
+                        </div>
+                    </article>
+
+                    <article id="sectionArticle8" data-aos="fade-right">
+                        <p>VIII</p>
+                        <h1>Sunset Street</h1>
+                        <p class="hidden">Prosta droga, <br>ludzi tłum niczym mrówki, <br>rozrzażone niebo, <br> każdy z nich aktorem własnego filmu</p>
+                        <div class="sectionContainerTextImg">
+                            <img src="img/12.jpg" alt="Alt">
+
+                            <div class="sectionContainerTextImgButton R B whiteColor"><h3>Hover Me</h3>
+                                <div><p><h1>Tłok</h1><span class="TextOnHover">Prosta droga, <br>ludzi tłum niczym mrówki, <br>rozrzażone niebo, <br> każdy z nich aktorem własnego filmu</span></p></div>
+                            </div>  
+                        </div>
+                    </article>
+
+                    <article id="sectionArticle9" data-aos="fade-right">
+                        <p>IX</p>
+                        <h1>Order</h1>
+                        <p class="hidden">Brak wolności w zamian za bezpieczeństwo. <br> Niewola ceną porządku</p>
+                        <div class="sectionContainerTextImg">
+                            <img src="img/13.JPG" alt="Alt">
+
+                            <div class="sectionContainerTextImgButton L B whiteColor"><h3>Hover Me</h3>
+                                <div><p><h1>Porządek</h1><span class="TextOnHover">Brak wolności w zamian za bezpieczeństwo. <br> Niewola ceną porządku</span></p></div>
+                            </div>  
+                        </div>
+                    </article>
+
+                    <article id="sectionArticle10" data-aos="fade-right">
+                        <p>X</p>
+                        <h1>Fired Windows</h1>
+                        <p class="hidden">Czy to już koniec? <br> -Nie wiem, jestem na granicy <br> Jakiej? <br> -Nie wiem <br> -Czy to już koniec czy dopiero początek?</p>
+                        <div class="sectionContainerTextImg">
+                            <img src="img/14.JPG" alt="Alt">
+
+                            <div class="sectionContainerTextImgButton R B whiteColor"><h3>Hover Me</h3>
+                                <div><p><h1>Koniec..</h1><span class="TextOnHover">Czy to już koniec? <br> -Nie wiem, jestem na granicy <br> Jakiej? <br> -Nie wiem <br> -Czy to już koniec czy dopiero początek?</span></p></div>
+                            </div>  
+                        </div>
+                    </article>
+                    
+                    <article id="sectionArticle11" data-aos="fade-right">
+                        <p>XI</p>
+                        <h1>Sunny Orange</h1>
+                        <p class="hidden">Pierwsze promienie <br> Nagły blask! <br> Światło maluje się na obrazie <br> Obraz nie jest wieczny <br> Z czasem... przemija, umiera</p>
+                        <div class="sectionContainerTextImg">
+                            <img src="img/15.JPG" alt="Alt">
+
+                            <div class="sectionContainerTextImgButton R B whiteColor"><h3>Hover Me</h3>
+                                <div><p><h1>Światło</h1><span class="TextOnHover">Pierwsze promienie <br> Nagły blask! <br> Światło maluje się na obrazie <br> Obraz nie jest wieczny <br> Z czasem... przemija, umiera</span></p></div>
+                            </div>  
+                        </div>
+                    </article>
+
+                    <article id="sectionArticle12" data-aos="fade-right">
+                        <p>XII</p>
+                        <h1>Loneliness</h1>
+                        <p class="hidden">Bycie.., bycie niezauważanym, najgorsze co może przytrafić się człowiekowi, gorsze od śmierci</p>
+                        <div class="sectionContainerTextImg">
+                            <img src="img/OtTak2.JPG" alt="Alt">
+
+                            <div class="sectionContainerTextImgButton L T whiteColor"><h3>Hover Me</h3>
+                                <div><p><h1>Samotność</h1><span class="TextOnHover">Bycie.., bycie niezauważanym, najgorsze co może przytrafić się człowiekowi, gorsze od śmierci</span></p></div>
+                            </div>  
+                        </div>
+                    </article>
+
+                </div>
+                
+            </div>    
+           
+
+        </section>
+
+        <aside class="topText">
+            <h1 style="margin-bottom: 4%;">Ważna informacja</h1>
+            <p>Ta strona powstała dzięki wsparciu w formie stypendium ze strony Mazowsza</p>
+        </aside>
+
+
+        <footer id=footer>
+            <ul class="footerMenu">
+                <li class="footerLogo">
+                    <a href="https://victor200407.github.io/Index.html"><h1><span class="footerTitle">Pozostałe Projekty</span></h1></a>
+                </li>
+
+                <li class="footerInfo Kontakt">
+                    <h1><span class="footerSubTitle">Kontakt</span></h1>
+
+                    <a href="tel:504714112"><p><i class="icon-phone" style="font-size: 1.5em;"></i><span class="footerContact"> +48 504 714 112</span></p></a>
+                    
+                    <a href="mailto:wiktor.kaczynki@onet.pl"><p><i class="icon-mail-alt" style="font-size: 1.5em;"></i><span class="footerContact"> wiktor.kaczynski@onet.pl</span></p></a>
+                    
+                    <a href="https://www.google.com/maps/place/Polska/@51.9358379,16.8921266,7z/data=!3m1!4b1!4m5!3m4!1s0x47009964a4640bbb:0x97573ca49cc55ea!8m2!3d51.919438!4d19.145136"><p><i class="icon-location" style="font-size: 1.5em;"></i><span class="footerContact"> Europe, Poland</span></p></a>
+                    
+                </li>
+
+                <li class="footerInfo Socialmedia">
+                    <h1><span class="footerSubTitle">Socialmedia</span></h1>
+                    <a href="https://www.instagram.com/victor04k/" target="_blank"><i class="icon-instagram"></i></a>
+                    
+                    <a href="https://www.facebook.com/profile.php?id=100005179756643" target="_blank"><i class="icon-facebook-squared"></i></a>
+                    
+                    <a href="https://github.com/Victor200407/Victor200407.github.io" target="_blank"><i class="icon-github-squared"></i></a>
+                    
+                </li>
+            </ul>
+        </footer>
+    </div>
+
+    <!--AOS-->
+        <script>
+            AOS.init({
+            easing: 'ease-in-out-sine'
+            });
+        </script>
+    
+        <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.11/require.min.js"></script>
+        <script>
+            requirejs.config({
+                baseUrl: '../dist',
+            });
+    
+            require(['aos'], function(AOS){
+                AOS.init({
+                    easing: 'ease-in-out-sine'
+                });
+            });
+        </script> -->
+      <!--AOS-->
+
+
+       <!--LOADING SCREEN-->  
+       <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+      </div>
+      <script>
+          $(window).on("load",function(){
+            $(".loader-wrapper").fadeOut("slow");
+          });
+      </script>
+      <!--LOADING SCREEN-->
+      
+</body>
+</html>
